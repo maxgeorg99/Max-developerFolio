@@ -1,47 +1,31 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
+/* Change this file to get your Personal Portfolio */
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
-};
 
 // Summary And Greeting Section
 
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Maximilian Georg",
+  title: "Hi all, I'm Maximilian",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Senior Software Engineer & Technical Leader 🚀 with 5+ years of experience building and shipping products with real customer value. I love to build fast, learn, iterate, and lead teams to success!"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Add your resume link here
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-// Social Media Links
+// Your Social Media Link
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  github: "https://github.com/maxgeorg99",
+  linkedin: "https://www.linkedin.com/in/maximilian-georg-73354a18a",
+  gmail: "maxi.georg.mg@gmail.com",
+  // gitlab: "https://gitlab.com/YourUserName",
+  // facebook: "https://www.facebook.com/YourUserName",
+  // medium: "https://medium.com/@YourUserName",
+  // stackoverflow: "https://stackoverflow.com/users/YourUserID/YourUserName",
+  // instagram: 'https://www.instagram.com/YourUserName/',
+  // twitter: 'https://twitter.com/YourUserName',
   display: true // Set true to display this section, defaults to false
 };
 
@@ -49,15 +33,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "PASSIONATE SENIOR SOFTWARE ENGINEER WHO LOVES TO EXPLORE AND BUILD WITH CUTTING-EDGE TECHNOLOGIES",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Develop robust backend systems using Java/Spring and modern architecture patterns"),
+    emoji("⚡ Lead technical teams and mentor junior developers without formal authority"),
+    emoji("⚡ Handle critical live deployments and take full responsibility for production issues"),
+    emoji("⚡ Build interactive and responsive frontend applications with Vue.js"),
+    emoji("⚡ Design and implement Domain-Driven Design (DDD) architectures"),
+    emoji("⚡ Create multiplayer games and real-time applications using SpacetimeDB"),
+    emoji("⚡ Build cross-platform mobile applications using Flutter/Dart"),
+    emoji("⚡ Implement data pipelines and machine learning solutions with Python"),
+    emoji("⚡ Advocate for best practices and guide product decisions in cross-functional teams")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,55 +51,40 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Spring Framework",
+      fontAwesomeClassname: "fas fa-leaf"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Vue.js",
+      fontAwesomeClassname: "fab fa-vuejs"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "JavaScript/TypeScript",
+      fontAwesomeClassname: "fab fa-js-square"
     },
+
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "Rust",
+      fontAwesomeClassname: "fab fa-rust"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
@@ -126,23 +97,26 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Karlsruhe Institute of Technology (KIT)",
+      logo: require("./assets/images/kit-logo.png"), // Add KIT logo to assets/images/
+      subHeader: "Bachelor of Science in Computer Science",
+      duration: "2020 - 2022",
+      desc: "Graduated with Bachelor's degree in Computer Science. Thesis: Data Spring Dependency Estimation",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Specialized in software engineering and data analysis",
+        "Completed thesis on advanced data dependency estimation algorithms"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "ETH Zürich",
+      logo: require("./assets/images/ETH-Logo.png"), // Add ETH logo to assets/images/
+      subHeader: "Computer Science Studies",
+      duration: "2018 - 2020",
+      desc: "Started Computer Science studies at one of Europe's top technical universities",
+      descBullets: [
+        "Strong foundation in computer science fundamentals",
+        "Transferred to KIT to complete degree"
+      ]
     }
   ]
 };
@@ -153,16 +127,36 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Technical Leadership & Mentoring", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Backend Development (Java/Spring)", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend Development (Vue.js)",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Domain-Driven Design (DDD)",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Database Design & SQL",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Flutter/Mobile Development",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "SpacetimeDB",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Python/Data Analysis",
+      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -171,32 +165,51 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, //Set it to false to hide workExperiences section, defaults to true
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Senior Software Engineer & Technical Leader",
+      company: "Chrono24",
+      companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
+      date: "June 2023 – Present",
+      desc: "Leading backend development, serving as Domain (DDD) owner, and providing technical leadership for critical marketplace systems. Handling most live deployments and critical issues for the team and organization.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Technical Owner for 'Certified' program - company-wide technical point of contact for authentication system",
+        "Lead team guidance and mentorship, speaking up on technical decisions and product direction",
+        "Handle critical live deployments and take full responsibility for production issues across the organization",
+        "Developed premium upgrade payment system with PayPal integration for private sellers",
+        "Architected Private Seller Funnel as cross-device solution with REST APIs for Web/iOS/Android",
+        "Enhanced internal A/B testing tool with autonomous feature conception and implementation",
+        "Active member of 'Agile Collaboration Exchange' improving Scrum processes across teams"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Junior Software Engineer",
+      company: "Chrono24",
+      companylogo: require("./assets/images/chrono24-logo.png"),
+      date: "October 2022 – June 2023",
+      desc: "One of two backend developers in a 7-person Scrum team, taking on diverse responsibilities and demonstrating leadership qualities.",
+      descBullets: [
+        "Handled full-stack development: concept design, data management, process development, API provision",
+        "Developed features for marketplace seller side (both dealers and private sellers) in 'Supply' product area",
+        "Moderated Daily Scrums and led product presentations inside and outside of reviews",
+        "Gained recognition for technical problem-solving and proactive communication",
+        "Began mentoring new team members and taking initiative on critical issues"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Working Student - Java Developer",
+      company: "Chrono24",
+      companylogo: require("./assets/images/chrono24-logo.png"),
+      date: "April 2020 – October 2022",
+      desc: "Started as working student while completing Bachelor's degree, quickly demonstrating exceptional potential and technical skills.",
+      descBullets: [
+        "Contributed to core marketplace functionality and backend services",
+        "Gained expertise in Java/Spring ecosystem and Vue.js frontend development",
+        "Participated in agile development processes and code reviews",
+        "Built foundation in domain-driven design principles",
+        "Showed early signs of technical leadership and initiative"
+      ]
     }
   ]
 };
@@ -213,28 +226,27 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "MAJOR PROJECTS THAT SHOWCASE MY EXPERTISE IN BUILDING SCALABLE SOLUTIONS",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/certification.png"),
+      projectName: "Watch Certification System",
+      projectDesc: "Built end-to-end certification process from scratch enabling authenticated watch verification between sellers and buyers through professional watchmakers. Achieved product-market fit through iterative development from smoke tests to MVP to V1. See the LinkedIn post for a visual and product journey!",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "LinkedIn Post",
+          url: "https://www.linkedin.com/posts/jan-schuhmacher-head-of-product-management-chrono24_%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%B3%F0%9D%97%B6%F0%9D%97%B2%F0%9D%97%B1-%F0%9D%97%AF%F0%9D%98%86-%F0%9D%97%96%F0%9D%97%B5%F0%9D%97%BF%F0%9D%97%BC%F0%9D%97%BB%F0%9D%97%BC%F0%9D%9F%AE-activity-7183422573307645952-cCSu?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyTJ5cBNcsVttK6b7-jZfq_PJnlNrxcsA8"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/private-seller-funnel.png"),
+      projectName: "Private Seller Funnel Rebuild",
+      projectDesc: "Completely rebuilt legacy seller onboarding system as modern Vue.js SPA with auto-generated TypeScript models, Jakarta validation, premium options, and PayPal integration. Dramatically improved user experience and conversion rates. See the LinkedIn post for a visual and product journey!",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "LinkedIn Post",
+          url: "https://www.linkedin.com/posts/j%C3%B6rg-mascha-32557a188_private-seller-our-next-app-first-feature-activity-7234487488222810113-LvRH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyTJ5cBNcsVttK6b7-jZfq_PJnlNrxcsA8"
         }
       ]
     }
@@ -247,57 +259,31 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  subtitle: "CAREER MILESTONES AND PROFESSIONAL GROWTH",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      title: "Technical Leadership Excellence",
+      subtitle: "Natural technical leader guiding teams, handling critical deployments, and taking full responsibility for production issues across the organization",
+      image: "https://informationage-production.s3.amazonaws.com/uploads/2022/10/information-ages-guide-to-tech-leadership-roles.jpeg", // Stock image: leadership
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      title: "Rapid Career Progression",
+      subtitle: "Promoted from Working Student → Junior → Senior Engineer in just 3 years, with exceptional performance at each level",
+      image: "https://media.istockphoto.com/id/2168908844/de/foto/exzellenz-wachstumsstrategie-gesch%C3%A4ftstrendkonzept-gesch%C3%A4ftsmann-hand-auf-pfeil-investieren.jpg?s=612x612&w=0&k=20&c=wq28a6OzZ1WGAE5ymc3iKHKlmPe-VfZXQSoGWFwXGG0=", // Stock image: career growth
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "Mentorship & Team Development",
+      subtitle: "Active mentor in Chrono24's Buddy Program, guiding multiple new hires and supporting their integration into the company",
+      image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80", // Stock image: mentorship
+      footerLink: []
+    },
+    {
+      title: "Critical Systems Ownership",
+      subtitle: "Trusted with most go lives of big project and critical issues, serving as Technical Owner for company-wide tech topics",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80", // Stock image: critical systems
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -307,43 +293,24 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  subtitle: "I LOVE TO WRITE AND TEACH OTHERS WHAT I HAVE LEARNT.",
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+    // Add your blog posts here if you have any
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
+  subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
 
   talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+    // Add your talks here if you have any
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -354,42 +321,33 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    // Add podcast links here if you have any
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+49 152 52866559",
+  email_address: "maxi.georg.mg@gmail.com"
 };
 
-// Twitter Section
+// Twitter Details
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "twitter", // Replace with your twitter username without @
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Placeholder value for isHireable
+const resumeSection = { resumeLink: "" }; // Placeholder for resumeSection
+const splashScreen = { display: true }; // Placeholder for splashScreen
+const illustration = { animated: true }; // Placeholder for illustration
 
 export {
-  illustration,
   greeting,
   socialMediaLinks,
-  splashScreen,
   skillsSection,
   educationInfo,
   techStack,
@@ -403,5 +361,7 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  splashScreen,
+  illustration
 };
