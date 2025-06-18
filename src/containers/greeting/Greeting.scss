@@ -125,3 +125,27 @@
     width: auto;
   }
 }
+
+.profile-image-top-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image-inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+  position: relative;
+  top: 0.3rem;
+}
+
+.profile-image-top {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.10);
+  background: #fafbfc;
+}

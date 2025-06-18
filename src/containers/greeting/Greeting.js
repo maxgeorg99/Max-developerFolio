@@ -23,9 +23,14 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                {greeting.title}
+                <span className="profile-image-inline">
+                  <img
+                    src={require("../../assets/images/profile.png")}
+                    alt="Profile"
+                    className="profile-image-top"
+                  />
+                </span>
               </h1>
               <p
                 className={

@@ -6,7 +6,7 @@ import emoji from "react-easy-emoji";
 
 const greeting = {
   username: "Maximilian Georg",
-  title: "Hi all, I'm Maximilian",
+  title: "Hi all, I'm Max",
   subTitle: emoji(
     "A passionate Senior Software Engineer & Technical Leader 🚀 with 5+ years of experience building and shipping products with real customer value. I love to build fast, learn, iterate, and lead teams to success!"
   ),
@@ -20,12 +20,6 @@ const socialMediaLinks = {
   github: "https://github.com/maxgeorg99",
   linkedin: "https://www.linkedin.com/in/maximilian-georg-73354a18a",
   gmail: "maxi.georg.mg@gmail.com",
-  // gitlab: "https://gitlab.com/YourUserName",
-  // facebook: "https://www.facebook.com/YourUserName",
-  // medium: "https://medium.com/@YourUserName",
-  // stackoverflow: "https://stackoverflow.com/users/YourUserID/YourUserName",
-  // instagram: 'https://www.instagram.com/YourUserName/',
-  // twitter: 'https://twitter.com/YourUserName',
   display: true // Set true to display this section, defaults to false
 };
 
@@ -36,14 +30,14 @@ const skillsSection = {
   subTitle: "PASSIONATE SENIOR SOFTWARE ENGINEER WHO LOVES TO EXPLORE AND BUILD WITH CUTTING-EDGE TECHNOLOGIES",
   skills: [
     emoji("⚡ Develop robust backend systems using Java/Spring and modern architecture patterns"),
-    emoji("⚡ Lead technical teams and mentor junior developers without formal authority"),
-    emoji("⚡ Handle critical live deployments and take full responsibility for production issues"),
-    emoji("⚡ Build interactive and responsive frontend applications with Vue.js"),
+    emoji("⚡ Lead technical teams and mentor junior developers"),
     emoji("⚡ Design and implement Domain-Driven Design (DDD) architectures"),
-    emoji("⚡ Create multiplayer games and real-time applications using SpacetimeDB"),
+    emoji("⚡ Advocate for best practices and guide product decisions in cross-functional scrum teams"),
+    emoji("⚡ Handle go lives and take full responsibility for production releases"),
+    emoji("⚡ Build interactive and responsive frontend applications with Vue.js"),
     emoji("⚡ Build cross-platform mobile applications using Flutter/Dart"),
     emoji("⚡ Implement data pipelines and machine learning solutions with Python"),
-    emoji("⚡ Advocate for best practices and guide product decisions in cross-functional teams")
+    emoji("⚡ Create multiplayer games and real-time applications using SpacetimeDB"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -127,12 +121,12 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Technical Leadership & Mentoring", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
       Stack: "Backend Development (Java/Spring)", //Insert stack or technology you have experience in
       progressPercentage: "95%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Technical Leadership & Mentoring", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Frontend Development (Vue.js)",
@@ -258,7 +252,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements 🏆 "),
   subtitle: "CAREER MILESTONES AND PROFESSIONAL GROWTH",
   achievementsCards: [
     {
