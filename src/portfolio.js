@@ -95,10 +95,10 @@ const educationInfo = {
       logo: require("./assets/images/kit-logo.png"), // Add KIT logo to assets/images/
       subHeader: "Bachelor of Science in Computer Science",
       duration: "2020 - 2022",
-      desc: "Graduated with Bachelor's degree in Computer Science. Thesis: Data Spring Dependency Estimation",
+      desc: "Graduated with Bachelor's degree in Computer Science. Thesis: Data Sparing Dependency Estimation",
       descBullets: [
         "Specialized in software engineering and data analysis",
-        "Completed thesis on advanced data dependency estimation algorithms"
+        "Bachelor thesis on advanced data dependency estimation algorithms"
       ]
     },
     {
@@ -129,10 +129,6 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Frontend Development (Vue.js)",
-      progressPercentage: "85%"
-    },
-    {
       Stack: "Domain-Driven Design (DDD)",
       progressPercentage: "90%"
     },
@@ -140,13 +136,17 @@ const techStack = {
       Stack: "Database Design & SQL",
       progressPercentage: "90%"
     },
+        {
+      Stack: "Frontend Development (Vue.js)",
+      progressPercentage: "85%"
+    },
     {
       Stack: "Flutter/Mobile Development",
       progressPercentage: "80%"
     },
     {
       Stack: "SpacetimeDB",
-      progressPercentage: "85%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Python/Data Analysis",
@@ -162,17 +162,26 @@ const workExperiences = {
   display: true, //Set it to false to hide workExperiences section, defaults to true
   experience: [
     {
-      role: "Senior Software Engineer & Technical Leader",
+      role: "Senior Software Engineer",
       company: "Chrono24",
       companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
       date: "June 2023 – Present",
-      desc: "Leading backend development, serving as Domain (DDD) owner, and providing technical leadership for critical marketplace systems. Handling most live deployments and critical issues for the team and organization.",
+      desc: "Leading backend development, serving as Domain (DDD) owner, and providing technical leadership.",
       descBullets: [
         "Technical Owner for 'Certified' program - company-wide technical point of contact for authentication system",
         "Lead team guidance and mentorship, speaking up on technical decisions and product direction",
         "Handle critical live deployments and take full responsibility for production issues across the organization",
-        "Developed premium upgrade payment system with PayPal integration for private sellers",
+      ]
+    },
+        {
+      role: "Software Engineer",
+      company: "Chrono24",
+      companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
+      date: "June 2023 – Present",
+      desc: "Developed cross-device products improve internal tooling and introduced code best practises",
+      descBullets: [
         "Architected Private Seller Funnel as cross-device solution with REST APIs for Web/iOS/Android",
+        "Build 'Premium Upgrade' Feature for boosting visibility with payment Integration (Klarna / PayPal)",
         "Enhanced internal A/B testing tool with autonomous feature conception and implementation",
         "Active member of 'Agile Collaboration Exchange' improving Scrum processes across teams"
       ]
