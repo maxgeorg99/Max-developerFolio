@@ -70,6 +70,7 @@ export default function Blogs() {
                       key={i}
                       isDark={isDark}
                       blog={{
+                        id: blog.id,
                         url: blog.url,
                         image: blog.image,
                         title: blog.title,

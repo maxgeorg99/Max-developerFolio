@@ -295,13 +295,32 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
-  subtitle: "I LOVE TO WRITE AND TEACH OTHERS WHAT I HAVE LEARNT.",
+  title: "Latest Blog Posts",
+  subtitle: "SHARING MY JOURNEY, INSIGHTS, AND LESSONS LEARNED IN SOFTWARE ENGINEERING AND GAME DEVELOPMENT",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
-    // Add your blog posts here if you have any
+    {
+      id: "move-to-omarchy",
+      title: "My Move to Omarchy",
+      description: "A reflection on my decision to embrace omarchy and what it means for my journey as a software engineer and leader."
+    },
+    {
+      id: "vampire-survivor-game",
+      title: "Building a Vampire Survivors Clone: Performance Optimization at Scale",
+      description: "How I built a high-performance bullet-hell survivor game handling thousands of entities without dropping frames."
+    },
+    {
+      id: "tower-defense-card-game",
+      title: "Tower Defense Meets Card Game: Designing a Hybrid Genre",
+      description: "How I combined deckbuilding mechanics with real-time tower defense to create a unique multiplayer strategy game."
+    },
+    {
+      id: "game-engine-comparison",
+      title: "Modern Game Engine Comparison: Finding the Right Tool for Your Project",
+      description: "An in-depth comparison of modern game engines including Unity, Unreal, Godot, and SpacetimeDB for multiplayer games."
+    }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
