@@ -47,23 +47,23 @@ export default function BlogPostPage() {
         let websiteUrl = null;
 
         if (headlineText === "Unity") {
-          iconSrc = "/unity.png";
-          darkIconSrc = "/unity-dark.png";
+          iconSrc = `${process.env.PUBLIC_URL}/unity.png`;
+          darkIconSrc = `${process.env.PUBLIC_URL}/unity-dark.png`;
           websiteUrl = "https://unity.com";
         } else if (headlineText === "Unreal Engine") {
-          iconSrc = "/unreal.png";
+          iconSrc = `${process.env.PUBLIC_URL}/unreal.png`;
           websiteUrl = "https://www.unrealengine.com";
         } else if (headlineText === "Godot") {
-          iconSrc = "/godot.png";
+          iconSrc = `${process.env.PUBLIC_URL}/godot.png`;
           websiteUrl = "https://godotengine.org";
         } else if (headlineText === "Bevy") {
-          iconSrc = "/bevy.png";
+          iconSrc = `${process.env.PUBLIC_URL}/bevy.png`;
           websiteUrl = "https://bevyengine.org";
         } else if (headlineText === "Phaser 2D") {
-          iconSrc = "/phaser.png";
+          iconSrc = `${process.env.PUBLIC_URL}/phaser.png`;
           websiteUrl = "https://phaser.io";
         } else if (headlineText === "Love2D") {
-          iconSrc = "/love2d.png";
+          iconSrc = `${process.env.PUBLIC_URL}/love2d.png`;
           websiteUrl = "https://love2d.org";
         }
 

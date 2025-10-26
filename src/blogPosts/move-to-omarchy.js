@@ -2,7 +2,7 @@ export const moveToOmarchyContent = `My Move to Omarchy
 
 *October 26, 2025*
 
-![Omarchy Setup](/omarchy-setup.jpg)
+![Omarchy Setup](/omarchy-setup.png)
 
 A New Chapter Begins
 
