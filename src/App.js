@@ -16,7 +16,7 @@ function App() {
 
   return (
     <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Switch>
             <Route exact path="/" component={Main} />
