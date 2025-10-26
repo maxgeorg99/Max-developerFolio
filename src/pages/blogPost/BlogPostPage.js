@@ -36,6 +36,75 @@ export default function BlogPostPage() {
       }
 
       return <img {...props} style={{maxWidth: "100%", borderRadius: "8px"}} />;
+    },
+    h2: ({node, children, ...props}) => {
+      // Add engine icons after each engine headline
+      if (postId === "game-engine-comparison") {
+        const headlineText =
+          typeof children === "string" ? children : children?.[0];
+        let iconSrc = null;
+        let darkIconSrc = null;
+        let websiteUrl = null;
+
+        if (headlineText === "Unity") {
+          iconSrc = "/unity.png";
+          darkIconSrc = "/unity-dark.png";
+          websiteUrl = "https://unity.com";
+        } else if (headlineText === "Unreal Engine") {
+          iconSrc = "/unreal.png";
+          websiteUrl = "https://www.unrealengine.com";
+        } else if (headlineText === "Godot") {
+          iconSrc = "/godot.png";
+          websiteUrl = "https://godotengine.org";
+        } else if (headlineText === "Bevy") {
+          iconSrc = "/bevy.png";
+          websiteUrl = "https://bevyengine.org";
+        } else if (headlineText === "Phaser 2D") {
+          iconSrc = "/phaser.png";
+          websiteUrl = "https://phaser.io";
+        } else if (headlineText === "Love2D") {
+          iconSrc = "/love2d.png";
+          websiteUrl = "https://love2d.org";
+        }
+
+        if (iconSrc) {
+          return (
+            <h2 {...props} className="engine-headline">
+              {children}
+              {websiteUrl && (
+                <a
+                  href={websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="engine-icon-link"
+                >
+                  {darkIconSrc ? (
+                    <>
+                      <img
+                        src={iconSrc}
+                        alt={headlineText}
+                        className="engine-icon-inline light-mode-icon"
+                      />
+                      <img
+                        src={darkIconSrc}
+                        alt={headlineText}
+                        className="engine-icon-inline dark-mode-icon"
+                      />
+                    </>
+                  ) : (
+                    <img
+                      src={iconSrc}
+                      alt={headlineText}
+                      className="engine-icon-inline"
+                    />
+                  )}
+                </a>
+              )}
+            </h2>
+          );
+        }
+      }
+      return <h2 {...props}>{children}</h2>;
     }
   };
 

@@ -14,6 +14,14 @@ export const blogPosts = [
     description:
       "A reflection on my decision to embrace omarchy and what it means for my journey as a software engineer and leader.",
     content: moveToOmarchyContent
+  },
+  {
+    id: "game-engine-comparison",
+    title: "Game Engine Comparison",
+    date: "2025-10-23",
+    description:
+      "A comprehensive comparison of popular game engines, highlighting their strengths and weaknesses.",
+    content: gameEngineComparisonContent
   }
 ];
 

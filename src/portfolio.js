@@ -27,17 +27,30 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "PASSIONATE SENIOR SOFTWARE ENGINEER WHO LOVES TO EXPLORE AND BUILD WITH CUTTING-EDGE TECHNOLOGIES",
+  subTitle:
+    "PASSIONATE SENIOR SOFTWARE ENGINEER WHO LOVES TO EXPLORE AND BUILD WITH CUTTING-EDGE TECHNOLOGIES",
   skills: [
-    emoji("⚡ Develop robust backend systems using Java/Spring and modern architecture patterns"),
+    emoji(
+      "⚡ Develop robust backend systems using Java/Spring and modern architecture patterns"
+    ),
     emoji("⚡ Lead technical teams and mentor junior developers"),
     emoji("⚡ Design and implement Domain-Driven Design (DDD) architectures"),
-    emoji("⚡ Advocate for best practices and guide product decisions in cross-functional scrum teams"),
-    emoji("⚡ Handle go lives and take full responsibility for production releases"),
-    emoji("⚡ Build interactive and responsive frontend applications with Vue.js"),
+    emoji(
+      "⚡ Advocate for best practices and guide product decisions in cross-functional scrum teams"
+    ),
+    emoji(
+      "⚡ Handle go lives and take full responsibility for production releases"
+    ),
+    emoji(
+      "⚡ Build interactive and responsive frontend applications with Vue.js"
+    ),
     emoji("⚡ Build cross-platform mobile applications using Flutter/Dart"),
-    emoji("⚡ Implement data pipelines and machine learning solutions with Python"),
-    emoji("⚡ Create multiplayer games and real-time applications using SpacetimeDB"),
+    emoji(
+      "⚡ Implement data pipelines and machine learning solutions with Python"
+    ),
+    emoji(
+      "⚡ Create multiplayer games and real-time applications using SpacetimeDB"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -136,7 +149,7 @@ const techStack = {
       Stack: "Database Design & SQL",
       progressPercentage: "90%"
     },
-        {
+    {
       Stack: "Frontend Development (Vue.js)",
       progressPercentage: "85%"
     },
@@ -170,10 +183,10 @@ const workExperiences = {
       descBullets: [
         "Technical Owner for 'Certified' program - company-wide technical point of contact for authentication system",
         "Lead team guidance and mentorship, speaking up on technical decisions and product direction",
-        "Handle critical live deployments and take full responsibility for production issues across the organization",
+        "Handle critical live deployments and take full responsibility for production issues across the organization"
       ]
     },
-        {
+    {
       role: "Software Engineer",
       company: "Chrono24",
       companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
@@ -229,12 +242,14 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "MAJOR PROJECTS THAT SHOWCASE MY EXPERTISE IN BUILDING SCALABLE SOLUTIONS",
+  subtitle:
+    "MAJOR PROJECTS THAT SHOWCASE MY EXPERTISE IN BUILDING SCALABLE SOLUTIONS",
   projects: [
     {
       image: require("./assets/images/certification.png"),
       projectName: "Watch Certification System",
-      projectDesc: "Built end-to-end certification process from scratch enabling authenticated watch verification between sellers and buyers through professional watchmakers. Achieved product-market fit through iterative development from smoke tests to MVP to V1. See the LinkedIn post for a visual and product journey!",
+      projectDesc:
+        "Built end-to-end certification process from scratch enabling authenticated watch verification between sellers and buyers through professional watchmakers. Achieved product-market fit through iterative development from smoke tests to MVP to V1. See the LinkedIn post for a visual and product journey!",
       footerLink: [
         {
           name: "LinkedIn Post",
@@ -245,7 +260,8 @@ const bigProjects = {
     {
       image: require("./assets/images/private-seller-funnel.png"),
       projectName: "Private Seller Funnel Rebuild",
-      projectDesc: "Completely rebuilt legacy seller onboarding system as modern Vue.js SPA with auto-generated TypeScript models, Jakarta validation, premium options, and PayPal integration. Dramatically improved user experience and conversion rates. See the LinkedIn post for a visual and product journey!",
+      projectDesc:
+        "Completely rebuilt legacy seller onboarding system as modern Vue.js SPA with auto-generated TypeScript models, Jakarta validation, premium options, and PayPal integration. Dramatically improved user experience and conversion rates. See the LinkedIn post for a visual and product journey!",
       footerLink: [
         {
           name: "LinkedIn Post",
@@ -266,26 +282,34 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Technical Leadership Excellence",
-      subtitle: "Natural technical leader guiding teams, handling critical deployments, and taking full responsibility for production issues across the organization",
-      image: "https://informationage-production.s3.amazonaws.com/uploads/2022/10/information-ages-guide-to-tech-leadership-roles.jpeg", // Stock image: leadership
+      subtitle:
+        "Natural technical leader guiding teams, handling critical deployments, and taking full responsibility for production issues across the organization",
+      image:
+        "https://informationage-production.s3.amazonaws.com/uploads/2022/10/information-ages-guide-to-tech-leadership-roles.jpeg", // Stock image: leadership
       footerLink: []
     },
     {
       title: "Rapid Career Progression",
-      subtitle: "Promoted from Working Student → Junior → Senior Engineer in just 3 years, with exceptional performance at each level",
-      image: "https://media.istockphoto.com/id/2168908844/de/foto/exzellenz-wachstumsstrategie-gesch%C3%A4ftstrendkonzept-gesch%C3%A4ftsmann-hand-auf-pfeil-investieren.jpg?s=612x612&w=0&k=20&c=wq28a6OzZ1WGAE5ymc3iKHKlmPe-VfZXQSoGWFwXGG0=", // Stock image: career growth
+      subtitle:
+        "Promoted from Working Student → Junior → Senior Engineer in just 3 years, with exceptional performance at each level",
+      image:
+        "https://media.istockphoto.com/id/2168908844/de/foto/exzellenz-wachstumsstrategie-gesch%C3%A4ftstrendkonzept-gesch%C3%A4ftsmann-hand-auf-pfeil-investieren.jpg?s=612x612&w=0&k=20&c=wq28a6OzZ1WGAE5ymc3iKHKlmPe-VfZXQSoGWFwXGG0=", // Stock image: career growth
       footerLink: []
     },
     {
       title: "Mentorship & Team Development",
-      subtitle: "Active mentor in Chrono24's Buddy Program, guiding multiple new hires and supporting their integration into the company",
-      image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80", // Stock image: mentorship
+      subtitle:
+        "Active mentor in Chrono24's Buddy Program, guiding multiple new hires and supporting their integration into the company",
+      image:
+        "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80", // Stock image: mentorship
       footerLink: []
     },
     {
       title: "Critical Systems Ownership",
-      subtitle: "Trusted with most go lives of big project and critical issues, serving as Technical Owner for company-wide tech topics",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80", // Stock image: critical systems
+      subtitle:
+        "Trusted with most go lives of big project and critical issues, serving as Technical Owner for company-wide tech topics",
+      image:
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80", // Stock image: critical systems
       footerLink: []
     }
   ],
@@ -296,28 +320,21 @@ const achievementSection = {
 
 const blogSection = {
   title: "Latest Blog Posts",
-  subtitle: "SHARING MY JOURNEY, INSIGHTS, AND LESSONS LEARNED IN SOFTWARE ENGINEERING AND GAME DEVELOPMENT",
+  subtitle:
+    "SHARING MY JOURNEY, INSIGHTS, AND LESSONS LEARNED IN SOFTWARE ENGINEERING AND GAME DEVELOPMENT",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       id: "move-to-omarchy",
       title: "My Move to Omarchy",
-      description: "A reflection on my decision to embrace omarchy and what it means for my journey as a software engineer and leader."
-    },
-    {
-      id: "vampire-survivor-game",
-      title: "Building a Vampire Survivors Clone: Performance Optimization at Scale",
-      description: "How I built a high-performance bullet-hell survivor game handling thousands of entities without dropping frames."
-    },
-    {
-      id: "tower-defense-card-game",
-      title: "Tower Defense Meets Card Game: Designing a Hybrid Genre",
-      description: "How I combined deckbuilding mechanics with real-time tower defense to create a unique multiplayer strategy game."
+      description:
+        "A reflection on my decision to embrace omarchy and what it means for my journey as a software engineer and leader."
     },
     {
       id: "game-engine-comparison",
-      title: "Modern Game Engine Comparison: Finding the Right Tool for Your Project",
-      description: "An in-depth comparison of modern game engines including Unity, Unreal, Godot, and SpacetimeDB for multiplayer games."
+      title: "Game Engine Comparison: Finding the Right Tool for Your Project",
+      description:
+        "An in-depth comparison of modern game engines including Unity, Unreal, Godot, and SpacetimeDB for multiplayer games."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -327,7 +344,9 @@ const blogSection = {
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
 
   talks: [
     // Add your talks here if you have any
@@ -350,7 +369,8 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+49 152 52866559",
   email_address: "maxi.georg.mg@gmail.com"
 };
@@ -363,9 +383,9 @@ const twitterDetails = {
 };
 
 const isHireable = true; // Placeholder value for isHireable
-const resumeSection = { resumeLink: "" }; // Placeholder for resumeSection
-const splashScreen = { display: true }; // Placeholder for splashScreen
-const illustration = { animated: true }; // Placeholder for illustration
+const resumeSection = {resumeLink: ""}; // Placeholder for resumeSection
+const splashScreen = {display: true}; // Placeholder for splashScreen
+const illustration = {animated: true}; // Placeholder for illustration
 
 export {
   greeting,

@@ -1,174 +1,170 @@
-export const gameEngineComparisonContent = `# Finding the Right Engine for your first game dev Project
+export const gameEngineComparisonContent = `# Finding the Right Engine for My First Game Dev Project
 
 *October 20, 2025*
 
-On my journey through the world of game development, I've come to appreciate the importance of selecting the right game engine for your project.
-Driven by the fear of making the wrong choice, I've learned to research and understand the strengths and weaknesses of the most popular game engines.
-Of course its usually the fastest and most productive way to just use the technology you are most comfortable with.
-I could have just used Java a language that is already known in detail and is widely used in game development and runs everywhere.
-For example, my former colleague Andreas built amazing indie games using Java like Astroloot or Mazebert.
+When I started exploring game development, I quickly realized how overwhelming it can be to pick the right engine. There’s no shortage of options — each with its own philosophy, ecosystem, and quirks. As a developer, I’ve always been drawn to understanding tradeoffs, not just following trends. So instead of jumping straight into the most popular engine, I spent time testing and comparing several of them.
 
-But I wanted to explore other options and like everywhere in software development what the tradeoffs of different technologies are.
+Of course, the most productive approach is often to stick with what you already know. I could have just built my first game in **Java**, a language I know deeply and one that can run anywhere. My former colleague Andreas, for example, built great indie titles like *Astroloot* and *Mazebert* entirely in Java.
 
-Let me share my insights on the current landscape of game engines and when to use each one.
-
-## The Contenders
-
-### Unity
-**Best for:** Cross-platform 2D/3D games, mobile games, indie projects
-
-**Pros:**
-- Massive asset store and community
-- Excellent cross-platform support (mobile, desktop, web, console)
-- C# scripting (great for developers with .NET background)
-- Strong 2D tooling
-- Visual scripting with Bolt/Visual Scripting
-
-**Cons:**
-- Licensing changes have created uncertainty
-- Can be resource-heavy
-- Runtime fees for larger projects
-
-**My Take:** Unity is still a solid choice for indie developers and mobile games. The C# ecosystem is fantastic, and the cross-platform capabilities are hard to beat. However, keep an eye on the licensing terms.
-
-### Unreal Engine
-**Best for:** AAA-quality 3D games, photorealistic graphics, architectural visualization
-
-**Pros:**
-- Stunning graphics out of the box with Lumen and Nanite
-- Blueprint visual scripting
-- Free until you earn significant revenue
-- Industry-standard for high-fidelity games
-- Excellent documentation and learning resources
-
-**Cons:**
-- Steeper learning curve
-- C++ can be intimidating for beginners
-- Heavy system requirements
-- Overkill for simple 2D games
-
-**My Take:** If you're building something that needs to look visually stunning or you're targeting next-gen consoles, Unreal is unmatched. The Blueprint system is powerful, but learning C++ opens up the full potential.
-
-### Godot
-**Best for:** Indie 2D games, open-source projects, learning game development
-
-**Pros:**
-- Completely free and open-source (MIT license)
-- Lightweight and fast
-- Excellent 2D engine
-- GDScript is Python-like and easy to learn
-- Active community development
-- No royalties, no subscriptions, no strings attached
-
-**Cons:**
-- 3D capabilities lag behind Unity/Unreal
-- Smaller asset ecosystem
-- Fewer learning resources compared to Unity/Unreal
-- Limited console support (though improving)
-
-**My Take:** Godot is perfect for 2D games and indie developers who want complete control without licensing concerns. The 4.0 update has dramatically improved 3D capabilities. For 2D games, I'd choose Godot over Unity any day.
-
-### Bevy
-**Best for:** Indie 2D games, open-source projects, learning game development
-
-**Pros:**
-
-**Cons:**
-- 3D capabilities lag behind Unity/Unreal
-- Smaller asset ecosystem
-- Fewer learning resources compared to Unity/Unreal
-- Limited console support (though improving)
-
-**My Take:** Bevy is perfect for indie 2D games and open-source projects. It's lightweight, fast, and has an excellent 2D engine. Rust-based, it's memory safe and fast. The active community development ensures regular updates and improvements. No royalties, no subscriptions, no strings attached.
-
-### Phaser 2D
-**Best for:** Indie 2D games, open-source projects, learning game development
-
-**Pros:**
-
-**Cons:**
-
-**My Take:** Phaser is perfect for indie 2D games and open-source projects. It's easy to learn and use, with a large community and asset ecosystem. Cross-platform support and good performance make it a great choice for indie developers.
-
-### Love2D
-**Best for:** Indie 2D games, open-source projects, learning game development
-
-**Pros:**
-
-**Cons:**
-
-**My Take:** Love2D is perfect for indie 2D games and open-source projects. It's lightweight, fast, and easy to learn and use. With a large community and asset ecosystem, it's a great choice for indie developers. Cross-platform support and good performance make it a great choice for indie developers.
-
-### SpacetimeDB (for Multiplayer Games)
-**Best for:** Real-time multiplayer games, persistent worlds, deterministic gameplay
-
-**Pros:**
-- Database as a game server - revolutionary approach
-- Automatic state synchronization
-- Built-in persistence
-- Deterministic execution
-- Written in Rust - memory safe and fast
-- Perfect for strategy games, MMOs, persistent worlds
-
-**Cons:**
-- Newer technology with smaller community
-- Requires rethinking traditional game architecture
-- Limited to multiplayer/online games
-- Steeper learning curve for traditional game developers
-
-**My Take:** SpacetimeDB is a game-changer for multiplayer games. Instead of building traditional game servers with complex state management, SpacetimeDB treats your game logic as database queries. This is **incredibly powerful** for:
-- Turn-based strategy games
-- Persistent multiplayer worlds
-- Games requiring complex state synchronization
-- Projects where data consistency is critical
-
-I've built several multiplayer prototypes with SpacetimeDB, and the development experience is unlike anything else. You write your game logic in Rust, and SpacetimeDB handles all the networking, state synchronization, and persistence automatically.
-
-## Decision Matrix
-
-| Use Case | Recommended Engine |
-|----------|-------------------|
-| Mobile puzzle game | Unity or Godot |
-| AAA 3D shooter | Unreal Engine |
-| 2D indie platformer | Godot |
-| Cross-platform RPG | Unity |
-| Photorealistic simulation | Unreal Engine |
-| Real-time multiplayer strategy | SpacetimeDB + any renderer |
-| MMO or persistent world | SpacetimeDB |
-| Learning game dev | Godot |
-
-## The Hybrid Approach
-
-Here's something many developers don't consider: **you can mix engines**. For example:
-- Use SpacetimeDB for server-side game logic and state management
-- Use Unity or Godot for client-side rendering and input
-- Get the best of both worlds
-
-## My Personal Stack
-
-For my multiplayer game projects, I typically use:
-1. **SpacetimeDB** for backend game logic and state management
-2. **Rust** for game logic (compiled to WebAssembly for clients)
-3. **Unity or Godot** for client-side rendering (depending on 2D vs 3D needs)
-
-This gives me:
-- Deterministic, synchronized game state
-- Fast, memory-safe backend code
-- Flexible client rendering options
-- Automatic persistence and state recovery
-
-## Final Thoughts
-
-The "best" game engine doesn't exist - it depends entirely on your project requirements:
-
-- **Budget-conscious indie dev?** → Godot
-- **Need AAA graphics?** → Unreal Engine
-- **Building for mobile?** → Unity
-- **Creating multiplayer/persistent world?** → SpacetimeDB
-- **Just learning?** → Godot or Unity
-
-The most important factor is **getting started**. Every engine can create amazing games in the right hands. Choose one, commit to learning it, and start building.
+But I wanted to explore the broader world of game engines — to learn *why* people choose what they do, and how different technologies shape the development experience. Here’s what I found.
 
 ---
 
-*What's your experience with different game engines? I'd love to hear your thoughts! Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-georg-73354a18a) or reach out at maxi.georg.mg@gmail.com.*`;
+## Phaser 2D
+
+**Best for:** Browser-based 2D games, web-first prototypes, quick iterations
+
+**Pros:**
+
+* Really easy to learn — it’s basically just JavaScript with extra tools for canvas, sprites, and input control.
+* Excellent performance for web games.
+* Integrates nicely with React or other JS frameworks.
+* Easy to deploy and host anywhere.
+
+**Cons:**
+
+* React hooks and state management can make it tricky to fully understand game states at first.
+* The official editor is a paid product.
+
+**My Take:**
+Phaser feels natural if you’re coming from a web background. It’s perfect for lightweight projects or learning game loops without worrying about installations or exports. If you love JavaScript and want instant results, Phaser is incredibly satisfying.
+
+---
+
+## Unity
+
+**Best for:** Cross-platform 2D/3D games, mobile titles, and polished indie projects
+
+**Pros:**
+
+* Great editor and visual workflow.
+* Outstanding performance and mature tooling.
+* C# scripting feels powerful and familiar for .NET developers.
+* Massive ecosystem, tutorials, and assets.
+
+**Cons:**
+
+* Built heavily on inheritance, which can lead to complex hierarchies.
+* Licensing and versioning have become a bit messy lately.
+
+**My Take:**
+Unity still offers a balance between accessibility and power. It’s fast to iterate, versatile, and battle-tested. But as the ecosystem grows, managing dependencies and versions can be frustrating. Still, for polished indie or mobile projects, Unity is hard to beat.
+
+---
+
+## Godot
+
+**Best for:** 2D pixel art games, open-source lovers, and rapid prototyping
+
+**Pros:**
+
+* Super simple interface and fully open source.
+* Fantastic documentation and community.
+* Great for pixel art or small 2D projects.
+* Supports GDScript (similar to Python) and C#.
+* Perfect for quick prototypes.
+
+**Cons:**
+
+* Also built around inheritance, which can become messy if not planned well.
+* Systems need to be carefully connected to avoid strong coupling between classes.
+
+**My Take:**
+Godot feels cozy. It’s like a friendly workshop where you can tinker freely. It’s lightweight, transparent, and ideal for experimenting. For small to mid-sized projects, it’s a joy — especially if you value openness over polish.
+
+---
+
+## Bevy
+
+**Best for:** Rust developers, ECS enthusiasts, scalable 2D/3D games
+
+**Pros:**
+
+* Excellent performance and scalability.
+* Built on the ECS (Entity Component System) paradigm.
+* Easy integration of modular systems.
+* Fully code-based and expressive in Rust.
+
+**Cons:**
+
+* No visual editor.
+* Rust’s borrow checker and compile times can slow iteration.
+* Still in alpha — documentation and ecosystem are young.
+
+**My Take:**
+Bevy is exciting. It’s what happens when modern software architecture meets game dev. I love how clean and modular it feels, but it’s definitely early-stage. If you enjoy Rust and don’t mind a bit of friction, Bevy rewards you with clarity and performance.
+
+---
+
+## Unreal Engine
+
+**Best for:** AAA-quality 3D games, stunning visuals, and cinematic experiences
+
+**Pros:**
+
+* Industry-leading graphics with Lumen and Nanite.
+* Blueprint visual scripting.
+* Great level design tools.
+* Free until your game earns serious revenue.
+
+**Cons:**
+
+* Blueprint graphs can become messy quickly.
+* High complexity and steep learning curve.
+* Heavy system requirements.
+
+**My Take:**
+Unreal is jaw-dropping. Every time I open it, I’m amazed at what’s possible — but also reminded that it’s a professional tool. If you’re after realistic lighting, massive worlds, or cinematic storytelling, Unreal is unmatched. For small 2D experiments though, it’s like bringing a rocket launcher to a water balloon fight.
+
+---
+
+## Love2D
+
+**Best for:** Simple 2D games, fast prototyping, and learning Lua
+
+**Pros:**
+
+* Really simple and lightweight.
+* Super fast development cycle.
+* Encourages clean, structured code.
+
+**Cons:**
+
+* No editor — you’ll be writing everything manually.
+
+**My Take:**
+Love2D feels like old-school coding joy. You open your editor, write Lua, and see results instantly. It’s minimal but empowering. If you love control and simplicity, it’s a wonderful way to understand the fundamentals of game loops and rendering.
+
+---
+
+## The Hybrid Approach
+
+Here’s something many developers overlook: **you can mix engines**.
+
+For example, you can:
+
+* Use **SpacetimeDB** for your backend logic and persistence.
+* Connect it to a **Unity** or **Godot** client for rendering and input.
+* Combine the strengths of both worlds: stable multiplayer and flexible visuals.
+
+---
+
+## My Personal Stack
+
+For most of my multiplayer experiments, I currently use:
+
+1. **SpacetimeDB** for backend logic and state management
+2. **Rust** for deterministic, memory-safe game logic
+3. **Godot or Bevy** for client-side rendering
+
+This combination gives me deterministic state handling, fast code, and flexible front-end visuals — all without reinventing the wheel.
+
+---
+
+## Final Thoughts
+
+It was a pleasure to explore these engines and learn about their unique strengths. Each one has its place in the game development landscape, and I’m excited to see how they evolve in the future.
+Always keep in mind to target the platforms where your users are most likely to play your game. This could be mobile devices, desktop computers, consoles, or even web browsers. Understanding your target audience and their preferences will help you make informed decisions.
+
+That’s it for now! If you have any questions or feedback, feel free to reach out!
+`;
