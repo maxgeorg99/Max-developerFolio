@@ -335,6 +335,12 @@ const blogSection = {
       title: "Game Engine Comparison: Finding the Right Tool for Your Project",
       description:
         "An in-depth comparison of modern game engines including Unity, Unreal, Godot, and SpacetimeDB for multiplayer games."
+    },
+    {
+      id: "vampire-survivor-game",
+      title: "My First Multiplayer Game",
+      description:
+        "An in-depth look at the development process of my first game."
     }
   ],
   display: true // Set false to hide this section, defaults to true

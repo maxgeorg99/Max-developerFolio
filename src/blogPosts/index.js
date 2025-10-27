@@ -16,6 +16,14 @@ export const blogPosts = [
     content: moveToOmarchyContent
   },
   {
+    id: "vampire-survivor-game",
+    title: "My First Multiplayer Game",
+    date: "2025-10-25",
+    description:
+      "An in-depth look at the development process of my first game.",
+    content: vampireSurvivorGameContent
+  },
+  {
     id: "game-engine-comparison",
     title: "Game Engine Comparison",
     date: "2025-10-23",
