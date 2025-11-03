@@ -39,7 +39,7 @@ export default function BlogPostPage() {
     },
     h2: ({node, children, ...props}) => {
       // Add engine icons after each engine headline
-      if (postId === "game-engine-comparison") {
+      if (postId === "game-engine-comparison" || postId === "jpa-comparison") {
         const headlineText =
           typeof children === "string" ? children : children?.[0];
         let iconSrc = null;
@@ -65,6 +65,26 @@ export default function BlogPostPage() {
         } else if (headlineText === "Love2D") {
           iconSrc = `${process.env.PUBLIC_URL}/love2d.png`;
           websiteUrl = "https://love2d.org";
+        } else if (headlineText === "Hibernate") {
+          iconSrc = `${process.env.PUBLIC_URL}/hibernate.png`;
+          websiteUrl = "https://hibernate.org/orm/";
+        } else if (headlineText === "Spring Data JPA") {
+          iconSrc = `${process.env.PUBLIC_URL}/spring-data-jpa.svg`;
+          websiteUrl = "https://spring.io/projects/spring-data-jpa";
+        } else if (headlineText === "MyBatis") {
+          iconSrc = `${process.env.PUBLIC_URL}/mybatis.svg`;
+          websiteUrl = "https://mybatis.org/mybatis-3/";
+        } else if (headlineText === "jOOQ") {
+          iconSrc = `${process.env.PUBLIC_URL}/jooq.png`;
+          darkIconSrc = `${process.env.PUBLIC_URL}/jooq-dark.png`;
+          websiteUrl = "https://www.jooq.org/";
+        } else if (headlineText === "Ebean ORM") {
+          iconSrc = `${process.env.PUBLIC_URL}/ebean.png`;
+          websiteUrl = "https://ebean.io/";
+        } else if (headlineText === "Eclipse Store") {
+          iconSrc = `${process.env.PUBLIC_URL}/eclipse-store.png`;
+          darkIconSrc = `${process.env.PUBLIC_URL}/eclipse-store-dark.png`;
+          websiteUrl = "https://eclipsestore.io/";
         }
 
         if (iconSrc) {

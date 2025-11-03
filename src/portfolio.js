@@ -341,6 +341,12 @@ const blogSection = {
       title: "My First Multiplayer Game",
       description:
         "An in-depth look at the development process of my first game."
+    },
+    {
+      id: "jpa-comparison",
+      title: "JPA Comparison",
+      description:
+        "An in-depth comparison of modern Java Persistence APIs including Hibernate, EclipseLink, and Spring Data JPA."
     }
   ],
   display: true // Set false to hide this section, defaults to true

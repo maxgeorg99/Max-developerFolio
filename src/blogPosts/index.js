@@ -1,10 +1,8 @@
-// Blog posts registry
-// Each post has: id (slug), title, date, description, content (imported from separate files)
-
 import {moveToOmarchyContent} from "./move-to-omarchy";
 import {vampireSurvivorGameContent} from "./vampire-survivor-game";
 import {towerDefenseCardGameContent} from "./tower-defense-card-game";
 import {gameEngineComparisonContent} from "./game-engine-comparison";
+import {jpaComparisonContent} from "./jpa-comparison";
 
 export const blogPosts = [
   {
@@ -30,6 +28,14 @@ export const blogPosts = [
     description:
       "A comprehensive comparison of popular game engines, highlighting their strengths and weaknesses.",
     content: gameEngineComparisonContent
+  },
+  {
+    id: "jpa-comparison",
+    title: "JPA Comparison",
+    date: "2025-11-03",
+    description:
+      "A comprehensive comparison of popular Java Persistence API implementations, highlighting their strengths and weaknesses.",
+    content: jpaComparisonContent
   }
 ];
 

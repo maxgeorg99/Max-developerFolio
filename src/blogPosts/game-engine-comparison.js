@@ -155,7 +155,7 @@ For most of my multiplayer experiments, I currently use:
 
 1. **SpacetimeDB** for backend logic and state management
 2. **Rust** for deterministic, memory-safe game logic
-3. **Godot or Bevy** for client-side rendering
+3. **Phaser 2D** for client-side rendering with JavaScript
 
 This combination gives me deterministic state handling, fast code, and flexible front-end visuals — all without reinventing the wheel.
 
