@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Max-developerFolio/static/css/main.758050cb.css",
-    "main.js": "/Max-developerFolio/static/js/main.01fdc382.js",
+    "main.css": "/Max-developerFolio/static/css/main.375e66d2.css",
+    "main.js": "/Max-developerFolio/static/js/main.e8a8b1b3.js",
     "static/css/64.bba8fa55.chunk.css": "/Max-developerFolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Max-developerFolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Max-developerFolio/static/css/769.b3cbb36b.chunk.css",
@@ -20,15 +20,15 @@
     "static/media/resume.pdf": "/Max-developerFolio/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/Max-developerFolio/index.html",
     "static/media/talksCardBack.svg": "/Max-developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.758050cb.css.map": "/Max-developerFolio/static/css/main.758050cb.css.map",
-    "main.01fdc382.js.map": "/Max-developerFolio/static/js/main.01fdc382.js.map",
+    "main.375e66d2.css.map": "/Max-developerFolio/static/css/main.375e66d2.css.map",
+    "main.e8a8b1b3.js.map": "/Max-developerFolio/static/js/main.e8a8b1b3.js.map",
     "64.bba8fa55.chunk.css.map": "/Max-developerFolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Max-developerFolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Max-developerFolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.064c696e.chunk.js.map": "/Max-developerFolio/static/js/769.064c696e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.758050cb.css",
-    "static/js/main.01fdc382.js"
+    "static/css/main.375e66d2.css",
+    "static/js/main.e8a8b1b3.js"
   ]
 }
