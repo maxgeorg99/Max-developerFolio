@@ -2,9 +2,11 @@ import React, {useContext, useEffect} from "react";
 import {useParams, useHistory} from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import {getBlogPostById} from "../../blogPosts";
 import Header from "../../components/header/Header";
 import StyleContext from "../../contexts/StyleContext";
+import DatabaseTimeline from "../../components/databaseTimeline/DatabaseTimeline";
 import "./BlogPostPage.scss";
 
 export default function BlogPostPage() {
@@ -15,6 +17,9 @@ export default function BlogPostPage() {
 
   // Custom components for markdown rendering
   const markdownComponents = {
+    databasetimeline: () => {
+      return <DatabaseTimeline />;
+    },
     img: ({node, ...props}) => {
       // Check if this is a "featured" image (first image in content)
       const isFeatured = props.alt && props.alt.includes("Setup");
@@ -39,7 +44,7 @@ export default function BlogPostPage() {
     },
     h2: ({node, children, ...props}) => {
       // Add engine icons after each engine headline
-      if (postId === "game-engine-comparison" || postId === "jpa-comparison") {
+      if (postId === "game-engine-comparison" || postId === "jpa-comparison" || postId === "server-side-rendering-comparison" || postId === "multiplatform-frameworks-comparison") {
         const headlineText =
           typeof children === "string" ? children : children?.[0];
         let iconSrc = null;
@@ -85,6 +90,27 @@ export default function BlogPostPage() {
           iconSrc = `${process.env.PUBLIC_URL}/eclipse-store.png`;
           darkIconSrc = `${process.env.PUBLIC_URL}/eclipse-store-dark.png`;
           websiteUrl = "https://eclipsestore.io/";
+        } else if (headlineText === "FreeMarker") {
+          iconSrc = `${process.env.PUBLIC_URL}/freemarker.png`;
+          websiteUrl = "https://freemarker.apache.org/";
+        } else if (headlineText === "Thymeleaf") {
+          iconSrc = `${process.env.PUBLIC_URL}/thymeleaf.png`;
+          websiteUrl = "https://www.thymeleaf.org/";
+        } else if (headlineText === "jte") {
+          iconSrc = `${process.env.PUBLIC_URL}/jte.svg`;
+          websiteUrl = "https://jte.gg/";
+        } else if (headlineText === "Flutter") {
+          iconSrc = `${process.env.PUBLIC_URL}/flutter.svg`;
+          websiteUrl = "https://flutter.dev/";
+        } else if (headlineText === "React Native") {
+          iconSrc = `${process.env.PUBLIC_URL}/react-native.svg`;
+          websiteUrl = "https://reactnative.dev/";
+        } else if (headlineText === "Kotlin Multiplatform") {
+          iconSrc = `${process.env.PUBLIC_URL}/kotlin.png`;
+          websiteUrl = "https://www.jetbrains.com/kotlin-multiplatform/";
+        } else if (headlineText === "Lynx") {
+          iconSrc = `${process.env.PUBLIC_URL}/lynx.svg`;
+          websiteUrl = "https://github.com/bytedance/lynx-native";
         }
 
         if (iconSrc) {
@@ -168,6 +194,7 @@ export default function BlogPostPage() {
           >
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
               components={markdownComponents}
             >
               {post.content}

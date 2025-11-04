@@ -3,8 +3,27 @@ import {vampireSurvivorGameContent} from "./vampire-survivor-game";
 import {towerDefenseCardGameContent} from "./tower-defense-card-game";
 import {gameEngineComparisonContent} from "./game-engine-comparison";
 import {jpaComparisonContent} from "./jpa-comparison";
+import {dataBaseEvolutionContent} from "./data-base-evolution";
+import {serverSideRenderingComparisonContent} from "./server-side-rendering-comparison";
+import {multiplatformFrameworksComparisonContent} from "./multiplatform-frameworks-comparison";
 
 export const blogPosts = [
+  {
+    id: "multiplatform-frameworks-comparison",
+    title: "Cross-Platform Mobile Development: Choosing the Right Framework",
+    date: "2025-11-04",
+    description:
+      "A comprehensive comparison of Flutter, React Native, and Kotlin Multiplatform for cross-platform mobile development.",
+    content: multiplatformFrameworksComparisonContent
+  },
+  {
+    id: "server-side-rendering-comparison",
+    title: "Server-Side Rendering: Why It Still Matters",
+    date: "2025-11-04",
+    description:
+      "A comprehensive comparison of Java templating engines (FreeMarker, Thymeleaf, jte) and why server-side rendering is still relevant in an SPA-dominated world.",
+    content: serverSideRenderingComparisonContent
+  },
   {
     id: "move-to-omarchy",
     title: "My Move to Omarchy",
@@ -36,6 +55,14 @@ export const blogPosts = [
     description:
       "A comprehensive comparison of popular Java Persistence API implementations, highlighting their strengths and weaknesses.",
     content: jpaComparisonContent
+  },
+  {
+    id: "data-base-evolution",
+    title: "40 Years of Database Evolution",
+    date: "2025-11-04",
+    description:
+      "An interactive journey through 40 years of database technology, from relational systems to cloud-native platforms.",
+    content: dataBaseEvolutionContent
   }
 ];
 

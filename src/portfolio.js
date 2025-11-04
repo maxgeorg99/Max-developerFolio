@@ -347,6 +347,18 @@ const blogSection = {
       title: "JPA Comparison",
       description:
         "An in-depth comparison of modern Java Persistence APIs including Hibernate, EclipseLink, and Spring Data JPA."
+    },
+    {
+      id: "server-side-rendering-comparison",
+      title: "Server-Side Rendering: Why It Still Matters",
+      description:
+        "A comprehensive comparison of Java templating engines and why its still relevant."
+    },
+    {
+      id: "multiplatform-frameworks-comparison",
+      title: "Cross-Platform Mobile Development: Choosing the Right Framework",
+      description:
+        "A comprehensive comparison for cross-platform mobile development."
     }
   ],
   display: true // Set false to hide this section, defaults to true
