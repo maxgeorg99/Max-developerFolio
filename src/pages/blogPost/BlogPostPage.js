@@ -44,7 +44,12 @@ export default function BlogPostPage() {
     },
     h2: ({node, children, ...props}) => {
       // Add engine icons after each engine headline
-      if (postId === "game-engine-comparison" || postId === "jpa-comparison" || postId === "server-side-rendering-comparison" || postId === "multiplatform-frameworks-comparison") {
+      if (
+        postId === "game-engine-comparison" ||
+        postId === "jpa-comparison" ||
+        postId === "server-side-rendering-comparison" ||
+        postId === "multiplatform-frameworks-comparison"
+      ) {
         const headlineText =
           typeof children === "string" ? children : children?.[0];
         let iconSrc = null;
@@ -110,7 +115,7 @@ export default function BlogPostPage() {
           websiteUrl = "https://www.jetbrains.com/kotlin-multiplatform/";
         } else if (headlineText === "Lynx") {
           iconSrc = `${process.env.PUBLIC_URL}/lynx.svg`;
-          websiteUrl = "https://github.com/bytedance/lynx-native";
+          websiteUrl = "https://lynxjs.org/";
         }
 
         if (iconSrc) {
