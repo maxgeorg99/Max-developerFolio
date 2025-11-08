@@ -268,6 +268,18 @@ const bigProjects = {
           url: "https://www.linkedin.com/posts/j%C3%B6rg-mascha-32557a188_private-seller-our-next-app-first-feature-activity-7234487488222810113-LvRH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyTJ5cBNcsVttK6b7-jZfq_PJnlNrxcsA8"
         }
       ]
+    },
+    {
+      image: require("./assets/images/offer-negotiation.jpeg"),
+      projectName: "New Price Negotiation Funnel",
+      projectDesc:
+        "Completely rebuilt how buyer and seller negotiate prices and come to a product which empowers users in their process while keeping the preferences and wishes of buyers and sellers in mind. We used the insights from many customer interviews and Domain-driven design to improve the user experience and conversion rates while establishing a solid technical foundation."
+    },
+    {
+      image: require("./assets/images/dashboard.jpeg"),
+      projectName: "Embedded data analytics for dealers",
+      projectDesc:
+        "Built a data analytics platform for dealers to track and analyze the watch market data. Implemented a real-time dashboard with interactive charts with Luzmo and Snowflake. This product helps dealers make data-driven decisions."
     }
   ],
   display: true // Set false to hide this section, defaults to true
