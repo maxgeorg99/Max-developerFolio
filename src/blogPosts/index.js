@@ -6,8 +6,17 @@ import {jpaComparisonContent} from "./jpa-comparison";
 import {dataBaseEvolutionContent} from "./data-base-evolution";
 import {serverSideRenderingComparisonContent} from "./server-side-rendering-comparison";
 import {multiplatformFrameworksComparisonContent} from "./multiplatform-frameworks-comparison";
+import {rustStackContent} from "./rust-stack";
 
 export const blogPosts = [
+  {
+    id: "rust-stack",
+    title: "Becoming a Rustacean",
+    date: "2025-11-15",
+    description:
+      "My journey with Rust and the tools that make development simple: Bevy, Dioxus, and Ratatui.",
+    content: rustStackContent
+  },
   {
     id: "multiplatform-frameworks-comparison",
     title: "Cross-Platform Mobile Development: Choosing the Right Framework",

@@ -48,7 +48,8 @@ export default function BlogPostPage() {
         postId === "game-engine-comparison" ||
         postId === "jpa-comparison" ||
         postId === "server-side-rendering-comparison" ||
-        postId === "multiplatform-frameworks-comparison"
+        postId === "multiplatform-frameworks-comparison" ||
+        postId === "rust-stack"
       ) {
         const headlineText =
           typeof children === "string" ? children : children?.[0];
@@ -116,6 +117,19 @@ export default function BlogPostPage() {
         } else if (headlineText === "Lynx") {
           iconSrc = `${process.env.PUBLIC_URL}/lynx.svg`;
           websiteUrl = "https://lynxjs.org/";
+        } else if (headlineText === "Bevy Client") {
+          iconSrc = `${process.env.PUBLIC_URL}/bevy.png`;
+          websiteUrl = "https://bevyengine.org";
+        } else if (headlineText === "Dioxus Subsecond") {
+          iconSrc = `${process.env.PUBLIC_URL}/dioxus.png`;
+          websiteUrl = "https://dioxuslabs.com";
+        } else if (headlineText === "Ratatui") {
+          iconSrc = `${process.env.PUBLIC_URL}/ratatui.png`;
+          websiteUrl = "https://ratatui.rs";
+        } else if (headlineText === "SpacetimeDB") {
+          iconSrc = `${process.env.PUBLIC_URL}/spacetime.png`;
+          darkIconSrc = `${process.env.PUBLIC_URL}/spacetime-dark.png`;
+          websiteUrl = "https://spacetimedb.com";
         }
 
         if (iconSrc) {

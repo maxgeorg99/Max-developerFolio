@@ -371,6 +371,12 @@ const blogSection = {
       title: "Cross-Platform Mobile Development: Choosing the Right Framework",
       description:
         "A comprehensive comparison for cross-platform mobile development."
+    },
+    {
+      id: "rust-stack",
+      title: "Becoming a Rustacean",
+      description:
+        "My current Rust stack and experience with the Rust toolchain."
     }
   ],
   display: true // Set false to hide this section, defaults to true
