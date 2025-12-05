@@ -59,7 +59,7 @@ What if Slay the Spire met Tower Defense? A deckbuilding game where you can only
 ### The Challenge
 Making the UI system work nicely with all the layering of cards, towers, enemies and projectiles.
 
-### Play It here: [Bootyful Towers](https://maximiliangeorg.itch.io/tower-defense-card-game) !
+### Play It here: [Bootyful Towers](https://maxgeorg99.itch.io/bootyful-towers) !
 ---
 
 ## Tower Defense MMO (Bevy + Rust)
