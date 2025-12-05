@@ -7,8 +7,17 @@ import {dataBaseEvolutionContent} from "./data-base-evolution";
 import {serverSideRenderingComparisonContent} from "./server-side-rendering-comparison";
 import {multiplatformFrameworksComparisonContent} from "./multiplatform-frameworks-comparison";
 import {rustStackContent} from "./rust-stack";
+import {gameDevJourneyContent} from "./game-dev-journey";
 
 export const blogPosts = [
+  {
+    id: "game-dev-journey",
+    title: "From Backend Developer to Game Dev: 4 Games in 4 Months",
+    date: "2025-12-05",
+    description:
+      "My journey from zero game dev experience to shipping 4 games across different engines: SpacetimeDB, LÖVE2D, Bevy, and Godot.",
+    content: gameDevJourneyContent
+  },
   {
     id: "rust-stack",
     title: "Becoming a Rustacean",

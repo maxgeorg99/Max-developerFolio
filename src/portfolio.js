@@ -178,31 +178,23 @@ const workExperiences = {
       role: "Senior Software Engineer",
       company: "Chrono24",
       companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
+      companylogoSmall: require("./assets/images/chrono24-logo-small.png"),
       date: "June 2023 – Present",
-      desc: "Leading backend development, serving as Domain (DDD) owner, and providing technical leadership.",
+      desc: "Backend development, Domain owner (DDD) for Registration + Shipping + Certification. ",
       descBullets: [
         "Technical Owner for 'Certified' program - company-wide technical point of contact for authentication system",
         "Lead team guidance and mentorship, speaking up on technical decisions and product direction",
+        "Conducted end-to-end recruiting and technical interviews for Senior Java Developer roles",
+        "Handle critical live deployments and take full responsibility for production issues across the organization",
+        "Developed premium upgrade payment system with PayPal integration for private sellers",
         "Handle critical live deployments and take full responsibility for production issues across the organization"
-      ]
-    },
-    {
-      role: "Software Engineer",
-      company: "Chrono24",
-      companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
-      date: "June 2023 – Present",
-      desc: "Developed cross-device products improve internal tooling and introduced code best practises",
-      descBullets: [
-        "Architected Private Seller Funnel as cross-device solution with REST APIs for Web/iOS/Android",
-        "Build 'Premium Upgrade' Feature for boosting visibility with payment Integration (Klarna / PayPal)",
-        "Enhanced internal A/B testing tool with autonomous feature conception and implementation",
-        "Active member of 'Agile Collaboration Exchange' improving Scrum processes across teams"
       ]
     },
     {
       role: "Junior Software Engineer",
       company: "Chrono24",
       companylogo: require("./assets/images/chrono24-logo.png"),
+      companylogoSmall: require("./assets/images/chrono24-logo-small.png"),
       date: "October 2022 – June 2023",
       desc: "One of two backend developers in a 7-person Scrum team, taking on diverse responsibilities and demonstrating leadership qualities.",
       descBullets: [
@@ -217,6 +209,7 @@ const workExperiences = {
       role: "Working Student - Java Developer",
       company: "Chrono24",
       companylogo: require("./assets/images/chrono24-logo.png"),
+      companylogoSmall: require("./assets/images/chrono24-logo-small.png"),
       date: "April 2020 – October 2022",
       desc: "Started as working student while completing Bachelor's degree, quickly demonstrating exceptional potential and technical skills.",
       descBullets: [
@@ -344,7 +337,7 @@ const blogSection = {
     },
     {
       id: "game-engine-comparison",
-      title: "Game Engine Comparison: Finding the Right Tool for Your Project",
+      title: "Game Engine Comparison:\nFinding the Right Tool for Your Project",
       description:
         "An in-depth comparison of modern game engines including Unity, Unreal, Godot, and SpacetimeDB for multiplayer games."
     },
@@ -362,13 +355,13 @@ const blogSection = {
     },
     {
       id: "server-side-rendering-comparison",
-      title: "Server-Side Rendering: Why It Still Matters",
+      title: "Server-Side Rendering:\nWhy It Still Matters",
       description:
         "A comprehensive comparison of Java templating engines and why its still relevant."
     },
     {
       id: "multiplatform-frameworks-comparison",
-      title: "Cross-Platform Mobile Development: Choosing the Right Framework",
+      title: "Cross-Platform Mobile Development:\nChoosing the Right Framework",
       description:
         "A comprehensive comparison for cross-platform mobile development."
     },
@@ -377,7 +370,13 @@ const blogSection = {
       title: "Becoming a Rustacean",
       description:
         "My current Rust stack and experience with the Rust toolchain."
-    }
+    },
+    {
+      id: "game-dev-journey",
+      title: "My Game Dev Journey:\n4 Games in One Year",
+      description:
+        "My journey from zero game dev experience to developing games across different engines: SpacetimeDB, LÖVE2D, Bevy, and Godot."
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
