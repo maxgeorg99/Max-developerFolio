@@ -1,0 +1,264 @@
+@import "../../_globalColor";
+
+.blog-post-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  min-height: calc(100vh - 200px);
+}
+
+.blog-post-content {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back-button {
+  background: $buttonColor;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(85, 85, 85, 0.2);
+  }
+}
+
+.markdown-body {
+  line-height: 1.8;
+  font-size: 18px;
+  color: $textColor;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: $textColor;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: $textColor;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    color: $textColor;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+    color: $textColor;
+  }
+
+  em {
+    color: $subTitle;
+    font-size: 0.9em;
+  }
+
+  strong {
+    font-weight: 600;
+    color: $textColor;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+    color: $textColor;
+  }
+
+  a {
+    color: $buttonColor;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease;
+
+    &:hover {
+      border-bottom-color: $buttonColor;
+    }
+  }
+
+  hr {
+    margin: 2em 0;
+    border: none;
+    border-top: 2px solid $lightBorder1;
+  }
+
+  code {
+    background: rgba(85, 85, 85, 0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "Consolas", "Monaco", monospace;
+    font-size: 0.9em;
+  }
+
+  pre {
+    background: rgba(85, 85, 85, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+
+    code {
+      background: none;
+      padding: 0;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid $buttonColor;
+    padding-left: 1em;
+    margin-left: 0;
+    color: $subTitle;
+    font-style: italic;
+  }
+
+  .engine-headline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .engine-icon-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+
+  .engine-icon-inline {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .light-mode-icon {
+    display: inline-block;
+  }
+
+  .dark-mode-icon {
+    display: none;
+  }
+
+  &.dark-mode {
+    color: $textColorDark;
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    strong {
+      color: $textColorDark;
+    }
+
+    code {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    hr {
+      border-top-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .light-mode-icon {
+      display: none;
+    }
+
+    .dark-mode-icon {
+      display: inline-block;
+    }
+  }
+}
+
+.blog-post-footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 2px solid $lightBorder1;
+  text-align: center;
+
+  .blog-post-date {
+    color: $subTitle;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+}
+
+.dark-mode {
+  .blog-post-footer {
+    border-top-color: rgba(255, 255, 255, 0.2);
+
+    .blog-post-date {
+      color: $textColorDark;
+    }
+  }
+
+  .back-button {
+    background: $topButtonHover;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-post-container {
+    padding: 40px 15px;
+  }
+
+  .markdown-body {
+    font-size: 16px;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    h3 {
+      font-size: 1.3em;
+    }
+  }
+}
