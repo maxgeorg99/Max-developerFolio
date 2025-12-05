@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Max-developerFolio/static/css/main.375e66d2.css",
-    "main.js": "/Max-developerFolio/static/js/main.49c28c3d.js",
+    "main.css": "/Max-developerFolio/static/css/main.ea9ff883.css",
+    "main.js": "/Max-developerFolio/static/js/main.c219b99f.js",
     "static/css/64.bba8fa55.chunk.css": "/Max-developerFolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Max-developerFolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Max-developerFolio/static/css/769.b3cbb36b.chunk.css",
@@ -13,7 +13,7 @@
     "static/media/Agustina.woff": "/Max-developerFolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/dashboard.jpeg": "/Max-developerFolio/static/media/dashboard.e6cbb1299521afdee269.jpeg",
     "static/media/manOnTable.svg": "/Max-developerFolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
-    "static/media/offer-negotiation.jpeg": "/Max-developerFolio/static/media/offer-negotiation.19697e3c04f0f5b52dc0.jpeg",
+    "static/media/offer-negotiation.jpeg": "/Max-developerFolio/static/media/offer-negotiation.85b7c48b8382e3f30120.jpeg",
     "static/media/contactMailDark.svg": "/Max-developerFolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/Max-developerFolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/profile.png": "/Max-developerFolio/static/media/profile.8446ed9e55066124b201.png",
@@ -22,15 +22,15 @@
     "static/media/resume.pdf": "/Max-developerFolio/static/media/resume.f0f733dd3cd732b39262.pdf",
     "index.html": "/Max-developerFolio/index.html",
     "static/media/talksCardBack.svg": "/Max-developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.375e66d2.css.map": "/Max-developerFolio/static/css/main.375e66d2.css.map",
-    "main.49c28c3d.js.map": "/Max-developerFolio/static/js/main.49c28c3d.js.map",
+    "main.ea9ff883.css.map": "/Max-developerFolio/static/css/main.ea9ff883.css.map",
+    "main.c219b99f.js.map": "/Max-developerFolio/static/js/main.c219b99f.js.map",
     "64.bba8fa55.chunk.css.map": "/Max-developerFolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Max-developerFolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Max-developerFolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.064c696e.chunk.js.map": "/Max-developerFolio/static/js/769.064c696e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.375e66d2.css",
-    "static/js/main.49c28c3d.js"
+    "static/css/main.ea9ff883.css",
+    "static/js/main.c219b99f.js"
   ]
 }
