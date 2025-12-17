@@ -16,6 +16,8 @@ What started as curiosity turned into an obsession. Each game taught me somethin
 
 ## Survivor game for me and my friends: Survive With Friends (SpacetimeDB + Phaser)
 
+![Survive With Friends Gameplay](/Max-developerFolio/gifs/survive-with-friends.gif)
+
 ### The Tech
 - **Server:** SpacetimeDB with Rust
 - **Client:** Phaser 2D (TypeScript)
@@ -42,6 +44,8 @@ Simple concept, endless replayability.
 ---
 
 ## Tower Defense Card Game: Bootyful Towers (Lua + LÖVE2D)
+
+![Bootyful Towers Gameplay](/Max-developerFolio/gifs/BootyfulTowers.gif)
 
 ### The Tech
 - **Engine:** LÖVE2D
@@ -91,6 +95,8 @@ Not getting lost in Rust's tool chain and fighting the borrow checker while tryi
 
 ## One Piece Autobattler (Godot 4 + GDScript)
 
+![One Piece Autobattler Gameplay](/Max-developerFolio/gifs/auto-battler.gif)
+
 ### The Tech
 - **Engine:** Godot 4
 - **Languages:** GDScript & Rust (SpacetimeDB Server)
@@ -114,7 +120,7 @@ Build your pirate crew, watch them fight, loot tressure chests to get new items.
 Getting all the system to feel impactful and work together nicely.
 Also I did a lot of pixel art for this game which was a new experience for me.
 
-### Still in development, stay tuned for the release!
+### Play It here: [Autobattler](https://maxgeorg99.itch.io/op-autobattler) !
 
 ---
 
