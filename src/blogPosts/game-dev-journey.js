@@ -68,10 +68,14 @@ Making the UI system work nicely with all the layering of cards, towers, enemies
 
 ## Tower Defense MMO (Bevy + Rust)
 
+![TD Gameplay](/Max-developerFolio/gifs/BevyTD.gif)
+
 ### The Tech
+Full Rust Setup with Dioxus
 - **Engine:** Bevy
 - **Language:** Rust
 - **Backend:** SpacetimeDB
+- **Tooling:** Ratatui wave / unit manager
 
 ### The Vision
 A persistent online world where players build towers together to defend against endless waves. Think: tower defense meets MMO.
