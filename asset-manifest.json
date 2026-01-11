@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Max-developerFolio/static/css/main.ea9ff883.css",
-    "main.js": "/Max-developerFolio/static/js/main.8a12a54b.js",
+    "main.js": "/Max-developerFolio/static/js/main.cf94d5c0.js",
     "static/css/64.bba8fa55.chunk.css": "/Max-developerFolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Max-developerFolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Max-developerFolio/static/css/769.b3cbb36b.chunk.css",
@@ -23,7 +23,7 @@
     "index.html": "/Max-developerFolio/index.html",
     "static/media/talksCardBack.svg": "/Max-developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.ea9ff883.css.map": "/Max-developerFolio/static/css/main.ea9ff883.css.map",
-    "main.8a12a54b.js.map": "/Max-developerFolio/static/js/main.8a12a54b.js.map",
+    "main.cf94d5c0.js.map": "/Max-developerFolio/static/js/main.cf94d5c0.js.map",
     "64.bba8fa55.chunk.css.map": "/Max-developerFolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Max-developerFolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Max-developerFolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.ea9ff883.css",
-    "static/js/main.8a12a54b.js"
+    "static/js/main.cf94d5c0.js"
   ]
 }
