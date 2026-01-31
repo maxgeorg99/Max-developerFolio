@@ -8,8 +8,17 @@ import {serverSideRenderingComparisonContent} from "./server-side-rendering-comp
 import {multiplatformFrameworksComparisonContent} from "./multiplatform-frameworks-comparison";
 import {rustStackContent} from "./rust-stack";
 import {gameDevJourneyContent} from "./game-dev-journey";
+import {wasmBevySpacetimedbContent} from "./wasm-bevy-spacetimedb";
 
 export const blogPosts = [
+  {
+    id: "wasm-bevy-spacetimedb",
+    title: "Bringing My Bevy Game to the Web with WASM and SpacetimeDB",
+    date: "2026-01-31",
+    description:
+      "A deep dive into WebAssembly architecture: how WASM enables running Rust code in browsers and servers, comparing traditional web stacks to the modern WASM-native approach.",
+    content: wasmBevySpacetimedbContent
+  },
   {
     id: "game-dev-journey",
     title: "From Backend Developer to Game Dev: 4 Games in 4 Months",
