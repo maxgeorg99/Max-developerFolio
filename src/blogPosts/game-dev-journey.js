@@ -2,8 +2,8 @@ export const gameDevJourneyContent = `# My Game Dev Journey:
 
 *December 5, 2025*
 
-A few months ago, I had no clue about game development and never touched any game engine. 
-I've 4 playable games across 4 different engines and tech stacks in my portfolio. 
+A few months ago, I had no clue about game development and never touched any game engine.
+I've 4 playable games across 4 different engines and tech stacks in my portfolio.
 Here's the story of how I stumbled into game development and what I learned building each project.
 
 ## How It Started
@@ -16,13 +16,15 @@ What started as curiosity turned into an obsession. Each game taught me somethin
 
 ## Survivor game for me and my friends: Survive With Friends (SpacetimeDB + Phaser)
 
+![Survive With Friends Gameplay](/Max-developerFolio/gifs/survive-with-friends.gif)
+
 ### The Tech
 - **Server:** SpacetimeDB with Rust
 - **Client:** Phaser 2D (TypeScript)
 - **Architecture:** ECS pattern, WebSockets
 
 ### The Vision
-A browser-based multiplayer survivors game where me & my friends can play together without downloads on desktop or mobile. 
+A browser-based multiplayer survivors game where me & my friends can play together without downloads on desktop or mobile.
 Simple concept, endless replayability.
 
 ### What I Built
@@ -42,6 +44,8 @@ Simple concept, endless replayability.
 ---
 
 ## Tower Defense Card Game: Bootyful Towers (Lua + LÖVE2D)
+
+![Bootyful Towers Gameplay](/Max-developerFolio/gifs/BootyfulTowers.gif)
 
 ### The Tech
 - **Engine:** LÖVE2D
@@ -64,10 +68,14 @@ Making the UI system work nicely with all the layering of cards, towers, enemies
 
 ## Tower Defense MMO (Bevy + Rust)
 
+![TD Gameplay](/Max-developerFolio/gifs/BevyTD.gif)
+
 ### The Tech
+Full Rust Setup with Dioxus
 - **Engine:** Bevy
 - **Language:** Rust
 - **Backend:** SpacetimeDB
+- **Tooling:** Ratatui wave / unit manager
 
 ### The Vision
 A persistent online world where players build towers together to defend against endless waves. Think: tower defense meets MMO.
@@ -91,12 +99,14 @@ Not getting lost in Rust's tool chain and fighting the borrow checker while tryi
 
 ## One Piece Autobattler (Godot 4 + GDScript)
 
+![One Piece Autobattler Gameplay](/Max-developerFolio/gifs/auto-battler.gif)
+
 ### The Tech
 - **Engine:** Godot 4
 - **Languages:** GDScript & Rust (SpacetimeDB Server)
 
 ### The Vision
-An autobattler inspired by Teamfight Tactics but themed around One Piece. 
+An autobattler inspired by Teamfight Tactics but themed around One Piece.
 Build your pirate crew, watch them fight, loot tressure chests to get new items.
 
 ### What I Built
@@ -114,7 +124,7 @@ Build your pirate crew, watch them fight, loot tressure chests to get new items.
 Getting all the system to feel impactful and work together nicely.
 Also I did a lot of pixel art for this game which was a new experience for me.
 
-### Still in development, stay tuned for the release!
+### Play It here: [Autobattler](https://maxgeorg99.itch.io/op-autobattler) !
 
 ---
 
@@ -150,5 +160,5 @@ I felt like I didn't have the skills or experience to build a game. I thought yo
 
 ---
 
-*Want to give feedback on my games or chat about game development? 
+*Want to give feedback on my games or chat about game development?
 Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-georg-73354a18a) or reach out at maxi.georg.mg@gmail.com.*`;

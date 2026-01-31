@@ -1,6 +1,5 @@
 import {moveToOmarchyContent} from "./move-to-omarchy";
 import {vampireSurvivorGameContent} from "./vampire-survivor-game";
-import {towerDefenseCardGameContent} from "./tower-defense-card-game";
 import {gameEngineComparisonContent} from "./game-engine-comparison";
 import {jpaComparisonContent} from "./jpa-comparison";
 import {dataBaseEvolutionContent} from "./data-base-evolution";

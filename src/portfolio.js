@@ -191,7 +191,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Junior Software Engineer",
+      role: "Software Engineer",
       company: "Chrono24",
       companylogo: require("./assets/images/chrono24-logo.png"),
       companylogoSmall: require("./assets/images/chrono24-logo-small.png"),
@@ -216,8 +216,7 @@ const workExperiences = {
         "Contributed to core marketplace functionality and backend services",
         "Gained expertise in Java/Spring ecosystem and Vue.js frontend development",
         "Participated in agile development processes and code reviews",
-        "Built foundation in domain-driven design principles",
-        "Showed early signs of technical leadership and initiative"
+        "Built foundation in domain-driven design principles"
       ]
     }
   ]
@@ -382,7 +381,7 @@ const blogSection = {
       title: "My Game Dev Journey:\n4 Games in One Year",
       description:
         "My journey from zero game dev experience to developing games across different engines: SpacetimeDB, LÖVE2D, Bevy, and Godot."
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
