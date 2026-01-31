@@ -329,12 +329,6 @@ const blogSection = {
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      id: "wasm-bevy-spacetimedb",
-      title: "Bevy in the Browser:\nWASM and SpacetimeDB",
-      description:
-        "A deep dive into how WebAssembly enables running Rust games in browsers and why the WASM-native stack beats traditional web architecture."
-    },
-    {
       id: "move-to-omarchy",
       title: "My Move to Omarchy",
       description:
@@ -381,6 +375,12 @@ const blogSection = {
       title: "My Game Dev Journey:\n4 Games in One Year",
       description:
         "My journey from zero game dev experience to developing games across different engines: SpacetimeDB, LÖVE2D, Bevy, and Godot."
+    },
+    {
+      id: "wasm-bevy-spacetimedb",
+      title: "Bevy in the Browser:\nWASM and SpacetimeDB",
+      description:
+        "A deep dive into how WebAssembly enables running Rust games in browsers and why the WASM-native stack beats traditional web architecture."
     }
   ],
   display: true // Set false to hide this section, defaults to true

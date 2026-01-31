@@ -21,8 +21,6 @@ This separation made sense historically — browsers could only run JavaScript, 
 
 ## How JavaScript Runs in the Browser
 
-<img src="/Max-developerFolio/wasm-blogpost/Browser.png" alt="Browser Logos" style="max-width: 200px; float: right; margin: 0 0 20px 20px;" />
-
 Before understanding why WebAssembly matters, let's look at how JavaScript actually executes. Every major browser has a JavaScript engine — V8 in Chrome, SpiderMonkey in Firefox, JavaScriptCore in Safari.
 
 ![V8 JavaScript Engine](/Max-developerFolio/wasm-blogpost/V8.png)
@@ -38,7 +36,7 @@ This is impressive engineering, but notice the journey: your high-level JavaScri
 
 ## WebAssembly: A Different Approach
 
-<img src="/Max-developerFolio/wasm-blogpost/AssemblyToMachineCode.png" alt="Assembly to Machine Code" style="max-width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;" />
+<img src="/Max-developerFolio/wasm-blogpost/WASM.png" alt="Assembly to Machine Code" style="max-width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;" />
 
 WebAssembly (WASM) takes a fundamentally different approach. Instead of shipping source code to be parsed and compiled in the browser, you compile your code *ahead of time* to a portable binary format.
 
@@ -49,6 +47,38 @@ This means:
 - **Predictable performance** — no JIT warmup, no deoptimization surprises
 - **Type safety** — types are explicit and verified at load time
 - **Near-native speed** — typically within 10-20% of native code
+
+## WebAssembly Security: The Host / Guest Sandbox Model
+
+One of the most underappreciated features of WebAssembly is how *secure* it is by design.
+
+A WASM module does not run like a native binary with full access to the system. Instead, it runs inside a **strict sandbox**, following a **Host / Guest model**:
+
+- **The Host** (browser, SpacetimeDB runtime, server process) owns all real resources
+- **The Guest** (your WASM module) gets *nothing* by default
+
+<img src="/Max-developerFolio/wasm-blogpost/HostGuest.png" alt="Host Guest Model" style="max-width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 8px;" />
+
+The guest cannot:
+- Access the file system
+- Open sockets
+- Allocate arbitrary memory
+- Spawn threads
+- Read environment variables
+- Call syscalls
+
+Unless the host *explicitly* exposes an interface for it.
+
+This makes WASM fundamentally different from running untrusted native code. Every interaction with the outside world goes through a narrow, well-defined boundary.
+
+### Capability-Based Access
+
+Instead of ambient authority, WASM uses **capabilities**.
+
+If the host wants the module to:
+- Read input → it must expose a function
+- Send network messages → it must provide an API
+- Access time, randomness, or storage → all must be granted explicitly
 
 ## Rust to WebAssembly
 
@@ -79,7 +109,8 @@ Here's where it gets interesting. SpacetimeDB uses WebAssembly not just on the c
 
 ![SpacetimeDB Module Compilation](/Max-developerFolio/wasm-blogpost/SpacetimeDBModuleCodeToWebAssembly.png)
 
-Your server logic is written in Rust (or C#), compiled to WebAssembly, and uploaded to SpacetimeDB as a "module." The database executes your WASM module directly — there's no separate application server. Your game logic runs *inside* the database.
+Your server logic is written in Rust (or C#/TypeScript), compiled to WebAssembly, and uploaded to SpacetimeDB as a "module." The database executes your WASM module directly — the server only provides the WASM runtime.
+Your game logic runs *inside* the database.
 
 The code above shows a typical SpacetimeDB module:
 - Define tables using Rust structs (\`Player\` with fields like \`id\`, \`username\`, \`level\`)
@@ -90,13 +121,69 @@ The code above shows a typical SpacetimeDB module:
 
 ![Client Module Interaction](/Max-developerFolio/wasm-blogpost/SpacetimeClientModuleInteraction.png)
 
-When my Bevy game (compiled to WASM, running in the browser) needs to interact with the server, it calls a reducer. That's it. No REST endpoints, no GraphQL schemas, no manual serialization.
+When my Bevy game (compiled to WASM, running in the browser) needs to interact with the server it connects to the SpacetimeDB module with a WebSocket connection.
+Then we can call a reducer directly and subscribe to tables updates we care about.
+That's it. No REST endpoints, no GraphQL schemas, no manual serialization.
 
 The client calls \`set_username("4Blave")\`, and SpacetimeDB:
 1. Routes the call to the WASM module
 2. Executes the reducer function
 3. Updates the database
 4. Pushes changes to subscribed clients
+
+For Bevy there is a Plugin called \`bevy_spacetime\` that handles the WebSocket connection and provides a convenient API for calling reducers and subscribing to tables.
+
+## The Hard Part: Making Bevy + Spacetime Work in WASM
+
+While Rust and WASM are a great match, the reality today is that **not everything in the Rust ecosystem is WASM-ready** — especially in game development.
+
+Both \`bevy_spacetime\` and the \`spacetimedb-sdk\` were originally designed with native targets in mind. Making them work in a browser required jumping through a few hoops.
+
+### What Didn’t Work Out of the Box
+
+Some examples of friction I ran into:
+
+- **Networking assumptions**
+  Native Rust often assumes TCP/UDP or direct socket access — which simply does not exist in the browser. Everything must go through WebSockets or host-provided APIs.
+
+- **Threading and async models**
+  WASM in the browser is largely single-threaded (for now). Any code relying on native threads, blocking calls, or certain async executors needed refactoring.
+
+- **Platform-specific dependencies**
+  Crates that depend on \`std::fs\`, \`std::net\`, or OS APIs break instantly under \`wasm32-unknown-unknown\`.
+
+- **Feature flags and conditional compilation**
+  A lot of code had to be carefully split using \`cfg(target_arch = "wasm32")\` to provide browser-safe implementations without breaking native builds.
+
+### Why This Is Frontier Work
+
+None of this is glamorous — but it’s important.
+
+Getting Bevy, SpacetimeDB, and their surrounding tooling to work seamlessly in WASM means:
+- Shared code paths between native and web
+- Identical gameplay logic across platforms
+- One Rust codebase for client *and* server
+
+This is still early-stage ecosystem work. But once these pieces solidify, the payoff is massive.
+
+### A Potential Rust Web Game Revolution
+
+If this direction continues, we could see a real shift in web game development:
+
+- No JavaScript game engine required
+- No separate backend language
+- No hand-written APIs
+- No duplicated game logic
+
+Just:
+- Rust
+- Bevy
+- WASM
+- A database that executes your game logic directly
+
+The browser becomes a first-class game runtime, not a second-class port target.
+
+We’re not fully there yet — but this kind of frontier work is how ecosystems mature. And Rust + WASM feels uniquely positioned to redefine how serious web games are built.
 
 ## The Full Architecture
 
@@ -115,6 +202,7 @@ This diagram shows the complete SpacetimeDB architecture:
 - Database stores all persistent state
 - Changes flow automatically to subscribed clients
 
+SpacetimeDB also provides code generation for client-side bindings, making it easy to interact with the database or making schema adjustments.
 The beauty is in what's *missing*: no API layer, no ORM, no separate caching service. The database *is* the server.
 
 ## Traditional vs. WASM Architecture
@@ -122,8 +210,9 @@ The beauty is in what's *missing*: no API layer, no ORM, no separate caching ser
 | Aspect | Traditional (JS + Java + DB) | WASM (Bevy + SpacetimeDB) |
 |--------|------------------------------|---------------------------|
 | Languages | 2-3 (JS, Java/Python, SQL) | 1 (Rust) |
-| Serialization | JSON/Protobuf between layers | Native types, auto-generated |
+| Serialization | JSON between layers | Native types, auto-generated |
 | Deployment | Multiple services | Single WASM module |
+| Development | API changes break clients | All client bindings & models are generated |
 | Type Safety | Runtime errors possible | Compile-time guarantees |
 | Performance | JIT overhead, GC pauses | Predictable, near-native |
 | Real-time Sync | Manual implementation | Built-in subscriptions |
@@ -139,10 +228,35 @@ The feedback loop is tight:
 4. Play the game — everything just works
 
 No more "it works on my machine" because the frontend was expecting a different JSON shape. No more null pointer exceptions because the backend returned unexpected data. The compiler is the contract.
+And also a huge performance boost due to the elimination of the slow javascript API requests and Database queries.
+
+## My WASM Game: Tower Tactics
+
+All of this theory is nice — but the real proof is shipping something playable.
+
+I used this exact stack (Bevy + WebAssembly + SpacetimeDB) to build **Tower Tactics**, a strategy game that runs *entirely in the browser* with near-native performance.
+
+🎮 **Play it now on itch.io:**
+👉 https://maxgeorg99.itch.io/tower-tactics
+
+![Tower Tactics Gameplay Preview](/Max-developerFolio/gifs/TowerTactics.gif)
+
+### Why This Matters
+
+Tower Tactics is not a JavaScript game with a WASM experiment bolted on. It’s a real Bevy game:
+- Written in **pure Rust**
+- Compiled to **WebAssembly**
+- Running game logic at native-like speed
+- Deployed like a normal web app
+
+No installs. No plugins. Just open the page and play.
+
+For me, this was the moment where WASM stopped being “interesting tech” and started being a **viable platform** for serious web games.
+
 
 ## Conclusion
 
-WebAssembly isn't just about running C++ games in the browser. It's a fundamental shift in how we can architect applications. By using WASM on both client and server, with tools like Bevy and SpacetimeDB, we can write entire multiplayer games in a single language with shared types, automatic synchronization, and near-native performance.
+WebAssembly is a fundamental shift in how we can architect applications. By using WASM on both client and server, with tools like Bevy and SpacetimeDB, we can write entire multiplayer games in a single language with shared types, automatic synchronization, and near-native performance.
 
 The traditional web stack served us well, but for real-time, stateful applications like games, the WASM-native approach offers compelling advantages. The complexity moves from runtime to compile time, where it's easier to catch and fix.
 
