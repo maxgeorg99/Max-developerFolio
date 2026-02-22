@@ -381,6 +381,13 @@ const blogSection = {
       title: "Bevy in the Browser:\nWASM and SpacetimeDB",
       description:
         "A deep dive into how WebAssembly enables running Rust games in browsers and why the WASM-native stack beats traditional web architecture."
+    },
+    {
+      id: "tiny-tactics-dev-log",
+      title: "Tiny Tactics - RTS x TD Dev Log",
+      date: "2026-02-21",
+      description:
+        "Update on my Game and new things I learned in game development."
     }
   ],
   display: true // Set false to hide this section, defaults to true

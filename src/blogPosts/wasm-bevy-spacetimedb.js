@@ -1,6 +1,8 @@
 export const wasmBevySpacetimedbContent = `
 # Bringing My Bevy Game to the Web with WebAssembly and SpacetimeDB
 
+*January 31, 2026*
+
 ## Introduction
 
 When I decided to bring my Bevy game to the browser, I had to rethink everything I knew about web development. The traditional model — JavaScript frontend talking to a Java backend with a separate database — suddenly felt unnecessarily complex. What if both my client and server could be written in Rust, compiled to WebAssembly, and share the same mental model?

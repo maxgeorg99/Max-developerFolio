@@ -8,8 +8,17 @@ import {multiplatformFrameworksComparisonContent} from "./multiplatform-framewor
 import {rustStackContent} from "./rust-stack";
 import {gameDevJourneyContent} from "./game-dev-journey";
 import {wasmBevySpacetimedbContent} from "./wasm-bevy-spacetimedb";
+import {tinyTacticsDevLogContent} from "./tiny-tactics-dev-log";
 
 export const blogPosts = [
+  {
+    id: "tiny-tactics-dev-log",
+    title: "RTS / TD Dev Log Tiny Tactics",
+    date: "2026-02-21",
+    description:
+      "Update on my Game and new things I learned in game development.",
+    content: tinyTacticsDevLogContent
+  },
   {
     id: "wasm-bevy-spacetimedb",
     title: "Bringing My Bevy Game to the Web with WASM and SpacetimeDB",
