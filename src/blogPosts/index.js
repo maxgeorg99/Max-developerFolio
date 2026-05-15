@@ -9,6 +9,7 @@ import {rustStackContent} from "./rust-stack";
 import {gameDevJourneyContent} from "./game-dev-journey";
 import {wasmBevySpacetimedbContent} from "./wasm-bevy-spacetimedb";
 import {tinyTacticsDevLogContent} from "./tiny-tactics-dev-log";
+import {spacetimedbBenchmarksContent} from "./spacetimedb-benchmarks";
 
 export const blogPosts = [
   {
@@ -98,6 +99,14 @@ export const blogPosts = [
     description:
       "An interactive journey through 40 years of database technology, from relational systems to cloud-native platforms.",
     content: dataBaseEvolutionContent
+  },
+  {
+    id: "spacetimedb-benchmarks",
+    title: "The State of Cutting-Edge Web Backends: 300k TPS, Zero Infrastructure",
+    date: "2026-05-15",
+    description:
+      "Exploring the frontier of web backend DX — where SpacetimeDB hits 303k TPS after V8 threading improvements, and Private Void Zero eliminates infrastructure overhead with Cloudflare Workers.",
+    content: spacetimedbBenchmarksContent
   }
 ];
 

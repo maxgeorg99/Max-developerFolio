@@ -268,10 +268,10 @@ const bigProjects = {
         "Completely rebuilt how buyer and seller negotiate prices and come to a product which empowers users in their process while keeping the preferences and wishes of buyers and sellers in mind. We used the insights from many customer interviews and Domain-driven design to improve the user experience and conversion rates while establishing a solid technical foundation."
     },
     {
-      image: require("./assets/images/dashboard.jpeg"),
-      projectName: "Embedded data analytics for dealers",
+      image: require("./assets/images/personalized-offers.png"),
+      projectName: "Personalized Offers for Prospective Buyers",
       projectDesc:
-        "Built a data analytics platform for dealers to track and analyze the watch market data. Implemented a real-time dashboard with interactive charts with Luzmo and Snowflake. This product helps dealers make data-driven decisions."
+        "Shipped a targeted offer feature with my team allowing dealers to send personalized discounts to users who saved their watch on the Wishlist. Delivered in a short timeframe with zero bugs, generating a 5%+ uplift in sales on the marketplace."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -388,6 +388,11 @@ const blogSection = {
       date: "2026-02-21",
       description:
         "Update on my Game and new things I learned in game development."
+    },
+    {
+      id: "spacetimedb-benchmarks",
+      title: "The State of Cutting-Edge Web Backends:\n300k TPS, Zero Infrastructure",
+      description: "Exploring the frontier of web development"
     }
   ],
   display: true // Set false to hide this section, defaults to true
