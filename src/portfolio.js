@@ -8,7 +8,7 @@ const greeting = {
   username: "Maximilian Georg",
   title: "Hi all, I'm Max",
   subTitle: emoji(
-    "A passionate Senior Software Engineer & Technical Leader 🚀 with 5+ years of experience building and shipping products with real customer value. I love to build fast, learn, iterate, and lead teams to success!"
+    "A passionate Engineering Leader with 5+ years of experience building and shipping products with real customer value. I love to build fast, learn, iterate, and lead teams to success!"
   ),
   resumeLink: "", // Add your resume link here
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -19,6 +19,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/maxgeorg99",
   linkedin: "https://www.linkedin.com/in/maximilian-georg-73354a18a",
+  instagram: "https://www.instagram.com/maxigeorg99/",
   gmail: "maxi.georg.mg@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
@@ -139,7 +140,7 @@ const techStack = {
     },
     {
       Stack: "Technical Leadership & Mentoring", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Domain-Driven Design (DDD)",
@@ -151,19 +152,14 @@ const techStack = {
     },
     {
       Stack: "Frontend Development (Vue.js)",
-      progressPercentage: "85%"
-    },
-    {
-      Stack: "Flutter/Mobile Development",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "SpacetimeDB",
-      progressPercentage: "80%"
+      progressPercentage: "75%"
     },
     {
       Stack: "Python/Data Analysis",
       progressPercentage: "75%"
+    },    {
+      Stack: "Flutter/Mobile Development",
+      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -175,11 +171,24 @@ const workExperiences = {
   display: true, //Set it to false to hide workExperiences section, defaults to true
   experience: [
     {
+      role: "Team Lead Development",
+      company: "Chrono24",
+      companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
+      companylogoSmall: require("./assets/images/chrono24-logo-small.png"),
+      date: "August 2026 – Present",
+      desc: "Leading a 2 Scrum teams with up to 8 Developers with a focus on delivering high-quality, software solutions for all seller centric products.",
+      descBullets: [
+        "Technical Owner for seller facing products",
+        "Lead team guidance and mentorship, taking technical decisions and shaping product direction",
+        "Conducted end-to-end recruiting and technical interviews for new developer roles",
+      ]
+    },
+    {
       role: "Senior Software Engineer",
       company: "Chrono24",
       companylogo: require("./assets/images/chrono24-logo.png"), // Add company logo
       companylogoSmall: require("./assets/images/chrono24-logo-small.png"),
-      date: "June 2023 – Present",
+      date: "June 2023 – July 2026",
       desc: "Backend development, Domain owner (DDD) for Registration + Shipping + Certification. ",
       descBullets: [
         "Technical Owner for 'Certified' program - company-wide technical point of contact for authentication system",
@@ -295,7 +304,7 @@ const achievementSection = {
     {
       title: "Rapid Career Progression",
       subtitle:
-        "Promoted from Working Student → Junior → Senior Engineer in just 3 years, with exceptional performance at each level",
+        "Promoted all the way from Working Student → Junior- → Intermediate- → Senior Engineer → Team Lead in just 3 years, with exceptional performance at each level",
       image:
         "https://media.istockphoto.com/id/2168908844/de/foto/exzellenz-wachstumsstrategie-gesch%C3%A4ftstrendkonzept-gesch%C3%A4ftsmann-hand-auf-pfeil-investieren.jpg?s=612x612&w=0&k=20&c=wq28a6OzZ1WGAE5ymc3iKHKlmPe-VfZXQSoGWFwXGG0=", // Stock image: career growth
       footerLink: []
@@ -303,7 +312,7 @@ const achievementSection = {
     {
       title: "Mentorship & Team Development",
       subtitle:
-        "Active mentor in Chrono24's Buddy Program, guiding multiple new hires and supporting their integration into the company",
+        "Active mentor, guiding multiple new hires and supporting their integration into the company",
       image:
         "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80", // Stock image: mentorship
       footerLink: []
