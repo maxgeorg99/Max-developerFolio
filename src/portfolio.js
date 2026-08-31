@@ -157,7 +157,8 @@ const techStack = {
     {
       Stack: "Python/Data Analysis",
       progressPercentage: "75%"
-    },    {
+    },
+    {
       Stack: "Flutter/Mobile Development",
       progressPercentage: "60%"
     }
@@ -180,7 +181,7 @@ const workExperiences = {
       descBullets: [
         "Technical Owner for seller facing products",
         "Lead team guidance and mentorship, taking technical decisions and shaping product direction",
-        "Conducted end-to-end recruiting and technical interviews for new developer roles",
+        "Conducted end-to-end recruiting and technical interviews for new developer roles"
       ]
     },
     {
@@ -400,8 +401,15 @@ const blogSection = {
     },
     {
       id: "spacetimedb-benchmarks",
-      title: "The State of Cutting-Edge Web Backends:\n300k TPS, Zero Infrastructure",
+      title:
+        "The State of Cutting-Edge Web Backends:\n300k TPS, Zero Infrastructure",
       description: "Exploring the frontier of web development"
+    },
+    {
+      id: "solo-dev-jam-11",
+      title: "My First Game Jam:\nSolo Dev Jam 11",
+      description:
+        "I entered my first game jam with Pay in Blood and placed 48th out of 212 submissions."
     }
   ],
   display: true // Set false to hide this section, defaults to true
