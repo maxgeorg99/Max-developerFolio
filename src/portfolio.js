@@ -5,7 +5,7 @@ import emoji from "react-easy-emoji";
 // Summary And Greeting Section
 
 const greeting = {
-  username: "Maximilian Georg",
+  username: "Maximilian Hahn",
   title: "Hi all, I'm Max",
   subTitle: emoji(
     "A passionate Engineering Leader with 5+ years of experience building and shipping products with real customer value. I love to build fast, learn, iterate, and lead teams to success!"
@@ -18,8 +18,8 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/maxgeorg99",
-  linkedin: "https://www.linkedin.com/in/maximilian-georg-73354a18a",
-  instagram: "https://www.instagram.com/maxigeorg99/",
+  linkedin: "https://www.linkedin.com/in/maximilian-hahn-73354a18a/",
+  instagram: "https://www.instagram.com/maximilian_hahn99/",
   gmail: "maxi.georg.mg@gmail.com",
   display: true // Set true to display this section, defaults to false
 };

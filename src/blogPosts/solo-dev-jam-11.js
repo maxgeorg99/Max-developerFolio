@@ -120,5 +120,5 @@ Go play [Pay in Blood](https://maxgeorg99.itch.io/pay-in-blood) and let me know 
 ---
 
 *Have feedback on Pay in Blood or want to chat about game jams?
-Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-georg-73354a18a) or reach out at maxi.georg.mg@gmail.com.*
+Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-hahn-73354a18a/) or reach out at maxi.georg.mg@gmail.com.*
 `;

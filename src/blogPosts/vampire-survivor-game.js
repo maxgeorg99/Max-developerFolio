@@ -122,4 +122,4 @@ The genre is incredibly fun to develop because you can iterate quickly and see i
 
 ---
 
-*Interested in game development or want to discuss optimization techniques? Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-georg-73354a18a) or reach out at maxi.georg.mg@gmail.com.*`;
+*Interested in game development or want to discuss optimization techniques? Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-hahn-73354a18a/) or reach out at maxi.georg.mg@gmail.com.*`;

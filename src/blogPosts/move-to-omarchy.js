@@ -52,4 +52,4 @@ Stay tuned for more updates as I navigate this exciting new chapter.
 
 ---
 
-*Want to discuss the current state of operating systems, Omarchy experiences and customizations, software engineering, or just connect? Reach out to me at [maxi.georg.mg@gmail.com](mailto:maxi.georg.mg@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-georg-73354a18a).*`;
+*Want to discuss the current state of operating systems, Omarchy experiences and customizations, software engineering, or just connect? Reach out to me at [maxi.georg.mg@gmail.com](mailto:maxi.georg.mg@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-hahn-73354a18a/).*`;

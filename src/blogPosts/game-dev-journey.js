@@ -161,4 +161,4 @@ I felt like I didn't have the skills or experience to build a game. I thought yo
 ---
 
 *Want to give feedback on my games or chat about game development?
-Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-georg-73354a18a) or reach out at maxi.georg.mg@gmail.com.*`;
+Connect with me on [LinkedIn](https://www.linkedin.com/in/maximilian-hahn-73354a18a/) or reach out at maxi.georg.mg@gmail.com.*`;
